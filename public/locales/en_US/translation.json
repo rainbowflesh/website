@@ -21,7 +21,7 @@
     "counter_equip": "Countermeasures Equipment",
     "cuas_module": "CUAS Module",
     "cuas_dev": "CUAS Device",
-    "email_value": "15311257582@163.com",
+    "email_value": "wongluna82@gmail.com",
     "email": "Email",
     "first_name": "First name",
     "greeting": "Greeting, We are ZEEWIND",
@@ -56,40 +56,42 @@
     "wechat": "WeChat"
   },
   "product": {
-    "rce1u_describe_short": "RCE-1U The Reconnaissance & Countermeasures Device",
-    "rce1u_describe": "The RCE-1U is an all-in-one unmanned aerial vehicle (UAV) countermeasure device designed for detection and counteraction. The device disrupts and counters UAVs by emitting specific frequency electromagnetic waves, thereby blocking the communication or navigation links of the UAV and achieving rapid target diversion or forced landing. This product provides real-time display of counteraction modes, battery levels, and other information. It can be used independently or combined with UAV detection products to form a \"Detect'n Strike\" system.",
-    "rce1u": "RCE-1U",
+    "rce1u": {
+      "name": "RCE-1U",
+      "describe_short": "RCE-1U The Reconnaissance & Countermeasures Device",
+      "describe": "The RCE-1U is an all-in-one unmanned aerial vehicle (UAV) countermeasure device designed for detection and counteraction. The device disrupts and counters UAVs by emitting specific frequency electromagnetic waves, thereby blocking the communication or navigation links of the UAV and achieving rapid target diversion or forced landing. This product provides real-time display of counteraction modes, battery levels, and other information. It can be used independently or combined with UAV detection products to form a \"Detect'n Strike\" system.",
+      "spec_name": {
+        "applicable_jamming": "Applications",
+        "battery_life": "Battery Life",
+        "dimensions": "Dimensions",
+        "jamming_freq": "Jamming Frequency",
+        "jamming_radius": "Jamming Radius",
+        "power_source": "Power Source",
+        "protect_level": "Protection Level",
+        "system_upgrade": "System Upgrading",
+        "tdp": "TDP",
+        "weight": "Weight",
+        "work_method": "Working Method",
+        "working_temp": "Working Temperature"
+      },
+      "spec_value": {
+        "applicable_jamming": "* Any radio-enabled Consumer Level UAV",
+        "battery_life": "On Single Charge: 6 hours",
+        "dimensions": "300 * 204 * 410 mm / 14\" ",
+        "jamming_freq": "2.4GHz / 5.8GHz",
+        "jamming_radius": "Maximum Radius: ≥ 1000m",
+        "power_source": "DC 36V",
+        "protect_level": "IP65",
+        "system_upgrade": "OTA / LAN",
+        "tdp": "99 watt",
+        "weight": "1100g / 2.42 lbs",
+        "work_method": "Directional Radio Jamming",
+        "working_temp": "-20℃~50℃ / -4℉~122℉"
+      }
+    },
     "re1p": "RE-1P",
     "fpv_7inch": "7\" Analog FPV Drone",
     "fpv_10inch": "10\" Analog FPV Drone"
-  },
-  "detail": {
-    "applicable_jamming": "Applications",
-    "battery_life": "Battery Life",
-    "dimensions": "Dimensions",
-    "jamming_freq": "Jamming Frequency",
-    "jamming_radius": "Jamming Radius",
-    "power_source": "Power Source",
-    "protect_level": "Protection Level",
-    "system_upgrade": "System Upgrading",
-    "tdp": "TDP",
-    "weight": "Weight",
-    "work_method": "Working Method",
-    "working_temp": "Working Temperature"
-  },
-  "detail_value": {
-    "applicable_jamming": "* Any radio-enabled Consumer Level UAV",
-    "battery_life": "On Single Charge: 6 hours",
-    "dimensions": "300 * 204 * 410 mm / 14\" ",
-    "jamming_freq": "2.4GHz / 5.8GHz",
-    "jamming_radius": "Maximum Radius: ≥ 1000m",
-    "power_source": "DC 36V",
-    "protect_level": "IP65",
-    "system_upgrade": "OTA / LAN",
-    "tdp": "99 watt",
-    "weight": "1100g / 2.42 lbs",
-    "work_method": "Directional Radio Jamming",
-    "working_temp": "-20℃~50℃ / -4℉~122℉"
   },
   "mention": {
     "rce1u": "We have fully test on DJI [Avatar, FPV, Mavic, Mavic Air, Mavic Mini, Mavic Phantom, Mavic Spark] and Parrot [ANAFI, Bebop, Bebop 2 Power]. Theoretically, this type of radio jamming device can effect to most of the devices including but not limited to [UAV, ground drones, mobile phones, remote controller (ground station), etc...]."

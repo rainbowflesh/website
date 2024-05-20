@@ -11,18 +11,19 @@ export const ContactInfo = () => {
           <h1 className="text-4xl font-bold mt-2 mb-2">{t("string.contact_us")}</h1>
           <div className="flex flex-col w-full border-opacity-50">
             <Card className="grid rounded-box place-items-center dark:bg-base-100">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid">
+                {/* grid-cols-2 gap-4 */}
                 <div className="mb-4">
                   <p className="font-bold">{t("string.email")}:</p>
                   <a className="text-gray-400" href={"mailto:" + t("string.email_value")}>
                     {t("string.email_value")}
                   </a>
                 </div>
-                <div className="mb-4">
+                {/* <div className="mb-4">
                   <p className="font-bold">{t("string.tel")}:</p>
                   <p className="text-gray-400">{t("string.tel_value")}</p>
-                </div>
-                <div className="mb-4">
+                </div> */}
+                {/* <div className="mb-4">
                   <p className="font-bold">{t("string.wechat")}:</p>
                   <p className="text-gray-400">
                     {t("string.wechat_value")}
@@ -47,7 +48,7 @@ export const ContactInfo = () => {
                       </Dropdown.Menu>
                     </Dropdown>
                   </p>
-                </div>
+                </div> */}
               </div>
             </Card>
             <Divider className="dark:text-white ">{t("string.or")}</Divider>
