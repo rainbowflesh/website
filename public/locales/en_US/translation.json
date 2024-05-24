@@ -18,9 +18,7 @@
     "contact_us": "Contact sales",
     "contact": "Contact",
     "contacts": "Contacts",
-    "counter_equip": "Countermeasures Equipment",
     "cuas_module": "CUAS Module",
-    "cuas_dev": "CUAS Device",
     "email_value": "wongluna82@gmail.com",
     "email": "Email",
     "first_name": "First name",
@@ -54,7 +52,9 @@
     "ur_msg_placeholder": "Leave anything you want to know",
     "ur_msg": "Your message",
     "wechat_value": "gin_shuzhao",
-    "wechat": "WeChat"
+    "wechat": "WeChat",
+    "cuas_device": "CUAS Device",
+    "counter_device": "Countermeasures Equipment"
   },
   "product": {
     "rce1u": {

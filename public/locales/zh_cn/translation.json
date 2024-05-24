@@ -67,7 +67,6 @@
     "contact_us": "联系我们",
     "contact_us_mention": "由于邮件保护，若三个工作日内未收到回复，请您直接与我们联系。",
     "contacts": "联系方式",
-    "counter_equip": "反制设备",
     "email": "Email",
     "email_value": "wongluna82@gmail.com",
     "first_name": "姓",
@@ -101,12 +100,13 @@
     "wechat_value": "gin_shuzhao",
     "accessories": "配件",
     "country": "国家",
-    "cuas_dev": "无人机反制设备",
     "uav": "无人机",
     "cuas_module": "CUAS 模块",
     "job_title": "岗位头衔",
     "send": "发送",
-    "ci": "我们开发和生产CUAS，我们销售无人机"
+    "ci": "我们开发和生产CUAS，我们销售无人机",
+    "cuas_device": "无人机反制设备",
+    "counter_device": "反制设备"
   },
   "product": {
     "fpv_10inch": "10\" FPV Drone",

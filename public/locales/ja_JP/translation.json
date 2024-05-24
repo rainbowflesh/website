@@ -67,7 +67,6 @@
     "contact_us": "お問い合わせ",
     "contact_us_mention": "スパム防止のため、3営業日以内に当社からの返信がない場合は、直接お問い合わせください。",
     "contacts": "連絡先",
-    "counter_equip": "対抗用機器",
     "cuas_module": "CUASモジュール",
     "email": "メール",
     "email_value": "wongluna82@gmail.com",
@@ -102,11 +101,12 @@
     "wechat_value": "gin_shuzhao",
     "accessories": "アクセサリー",
     "country": "国",
-    "cuas_dev": "ドローン対策設備",
     "uav": "UAV",
     "job_title": "役職",
     "send": "送信",
-    "ci": "CUASの開発・製造、UAVの販売を行っております。"
+    "ci": "CUASの開発・製造、UAVの販売を行っております。",
+    "cuas_device": "ドローン対策設備",
+    "counter_device": "対抗用機器"
   },
   "product": {
     "fpv_10inch": "10\" FPV Drone",

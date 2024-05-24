@@ -6,7 +6,7 @@ export const CuasIndex = () => {
   const { t } = useTranslation();
   return (
     <main className="dot-background p-8 flex flex-col">
-      <h1 className="text-5xl font-bold m-auto text-center mb-4">{t("string.cuas_dev")}</h1>
+      <h1 className="text-5xl font-bold m-auto text-center mb-4">{t("string.cuas_device")}</h1>
       <div className="bg-gray-100 dark:bg-black p-8 mx-auto max-w-2xl lg:max-w-none mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
         <Card className="px-4 m-auto">
           <Link className="group m-auto" to="/product/cuas/rce1u">
