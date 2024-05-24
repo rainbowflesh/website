@@ -1,6 +1,6 @@
 {
   "about": {
-    "a_where": "We're working remotely, so we're everywhere?",
+    "a_where": "我们都是远程工作, 所以我们都在哪儿?",
     "a_who": "We are a corp, made with a couple of scientist, a couple of genies engineers, and one part time designer.",
     "q_where": "Where are we?",
     "q_who": "What are we?"
@@ -15,7 +15,7 @@
     "protect_level": "IP65",
     "system_upgrade": "OTA / LAN",
     "tdp": "99瓦",
-    "weight": "1100g / 2.42 lbs",
+    "weight": "1100g",
     "work_method": "定向无线电干扰",
     "working_temp": "-20℃~50℃ / -4℉~122℉"
   },
@@ -98,6 +98,30 @@
     "ur_msg": "咨询内容",
     "ur_msg_placeholder": "告诉我们您想了解的任何内容",
     "wechat": "微信",
-    "wechat_value": "gin_shuzhao"
+    "wechat_value": "gin_shuzhao",
+    "accessories": "配件",
+    "country": "国家",
+    "cuas_dev": "无人机反制设备",
+    "uav": "无人机",
+    "cuas_module": "CUAS 模块",
+    "job_title": "岗位头衔",
+    "send": "发送",
+    "ci": "我们开发和生产CUAS，我们销售无人机"
+  },
+  "product": {
+    "fpv_10inch": "10\" FPV Drone",
+    "fpv_7inch": "7\" FPV Drone",
+    "rce1u": {
+      "spec_value": {
+        "working_temp": "-20℃~50℃ / -4℉~122℉"
+      },
+      "name": "RCE-1U",
+      "describe": "RCE-1U是一款一体化无人机（UAV）对抗设备，专为检测和反制而设计。\n该装置通过发射特定频率的电磁波对无人机进行干扰和反制，从而阻断无人机的通信或导航链路，实现目标快速转向或迫降。\n该产品实时显示对抗模式、电池电量等信息。\n它可以独立使用，也可以与无人机探测产品组合形成“察打一体”系统。",
+      "describe_short": "RCE-1U 侦测与反制设备",
+      "spec_name": {
+        "applicable_jamming": "应用"
+      }
+    },
+    "re1p": "RE-1P"
   }
 }

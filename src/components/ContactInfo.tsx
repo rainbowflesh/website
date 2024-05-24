@@ -1,4 +1,4 @@
-import { Card, Divider, Dropdown, Hero } from "react-daisyui";
+import { Card, Divider, Hero } from "react-daisyui";
 import { useTranslation } from "react-i18next";
 import { Button, Textarea } from "react-daisyui";
 
@@ -129,7 +129,7 @@ export default function ContactForm() {
         </label>
         <br />
         <Button color="primary" fullWidth={true} className="mt-2" type="submit">
-          Send
+          {t("string.send")}
         </Button>
       </form>
       <p className="text-xs mt-2 -mb-4 text-stone-600 dark:text-stone-400">* {t("string.contact_us_mention")}</p>

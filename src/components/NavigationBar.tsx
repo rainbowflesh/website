@@ -26,7 +26,7 @@ export const NavigationBar = () => {
       <Navbar.Start className="flex flex-wrap md:flex-wrap-reverse truncate">
         <LogoLight />
       </Navbar.Start>
-      <Navbar.Center className="flex  flex-wrap md:flex-wrap-reverse h-16 items-center justify-between  z-50">
+      <Navbar.Center className="flex flex-wrap md:flex-wrap-reverse h-16 items-center justify-between z-50">
         <div className="hidden md:block" aria-label="Global">
           <Menu horizontal={true} className="">
             <Menu.Item
@@ -37,18 +37,6 @@ export const NavigationBar = () => {
               <details open={isProductMenuOpen}>
                 <summary>{t("string.products")}</summary>
                 <ul id="navbar-dropdown1" className="bg-slate-50 dark:bg-base-300 items-start min-w-max">
-                  <li className=" items-start ">
-                    <Link className="text-stone-500 dark:text-stone-400" to="/product/cuas">
-                      {t("string.recon_module")}
-                    </Link>
-                    <ul>
-                      <li>
-                        <Link className="text-lg" to={"/product/cuas/rce1u"}>
-                          {t("products.rce1u_describe_short")}
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
                   <li>
                     <Link className="text-stone-500 dark:text-stone-400" to="/product/uav">
                       Unmanned Aerial Vehicle
@@ -62,6 +50,18 @@ export const NavigationBar = () => {
                       <li>
                         <Link className="text-lg" to={"/product/uav/fpv/10inch"}>
                           {t("product.fpv_10inch")}
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className=" items-start ">
+                    <Link className="text-stone-500 dark:text-stone-400" to="/product/cuas">
+                      {t("string.recon_module")}
+                    </Link>
+                    <ul>
+                      <li>
+                        <Link className="text-lg" to={"/product/cuas/rce1u"}>
+                          {t("products.rce1u_describe_short")}
                         </Link>
                       </li>
                     </ul>

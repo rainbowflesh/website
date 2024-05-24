@@ -6,11 +6,11 @@ import { Contact } from "./pages/Contact";
 import { Home } from "./pages/Home";
 import { LearnMore } from "./pages/LearnMore";
 import { CuasIndex, Index, UavIndex } from "./pages/Product";
-import { RCE1U } from "./pages/products/rce1u";
+import { RCE1U } from "./pages/products/cuas/rce1u";
 import { Services } from "./pages/Service";
 import { Void } from "./pages/Void";
-import { Fpv7Inch } from "./pages/products/fpv7inch";
-import { Fpv10Inch } from "./pages/products/fpv10inch";
+import { UavFpv7Inch } from "./pages/products/uav/fpv/7inch";
+import { UavFpv10Inch } from "./pages/products/uav/fpv/10inch";
 
 export const PageRoutes = () => {
   return (
@@ -26,8 +26,8 @@ export const PageRoutes = () => {
       <Route path="/services" element={<Services />}></Route>
       {/* products */}
       <Route path="/product/cuas/rce1u" element={<RCE1U />}></Route>
-      <Route path="/product/uav/fpv/7inch" element={<Fpv7Inch />}></Route>
-      <Route path="/product/uav/fpv/10inch" element={<Fpv10Inch />}></Route>
+      <Route path="/product/uav/fpv/7inch" element={<UavFpv7Inch />}></Route>
+      <Route path="/product/uav/fpv/10inch" element={<UavFpv10Inch />}></Route>
       {/* 404 */}
       <Route path="*" element={<Void />}></Route>
     </Routes>

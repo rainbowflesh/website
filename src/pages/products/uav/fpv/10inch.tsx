@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Tabs } from "react-daisyui";
-import { ContactInfo } from "../../components/ContactInfo";
+import { ContactInfo } from "../../../../components/ContactInfo.tsx";
 
-export const Fpv7Inch = () => {
+export const UavFpv10Inch = () => {
   const [is1Checked, set1Checked] = useState(true);
   const [is2Checked, set2Checked] = useState(false);
   const [is3Checked, set3Checked] = useState(false);
@@ -47,7 +47,7 @@ export const Fpv7Inch = () => {
       </div>
       {is1Checked && (
         <div className="w-full h-full bg-base-100 border-base-300 rounded-box">
-          <img className="w-full h-full" src="/images/uav/7inch-showcase.jpg" />
+          <img className="w-full h-full" src="/images/uav/fpv/10inch/showcase.jpg" />
         </div>
       )}
       {is3Checked && (

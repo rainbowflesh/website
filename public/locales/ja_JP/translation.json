@@ -99,6 +99,26 @@
     "ur_msg": "あなたのメッセージ",
     "ur_msg_placeholder": "知りたいことを何でも残してください",
     "wechat": "WeChat",
-    "wechat_value": "gin_shuzhao"
+    "wechat_value": "gin_shuzhao",
+    "accessories": "アクセサリー",
+    "country": "国",
+    "cuas_dev": "ドローン対策設備",
+    "uav": "UAV",
+    "job_title": "役職",
+    "send": "送信",
+    "ci": "CUASの開発・製造、UAVの販売を行っております。"
+  },
+  "product": {
+    "fpv_10inch": "10\" FPV Drone",
+    "fpv_7inch": "7\" FPV Drone",
+    "rce1u": {
+      "spec_value": {
+        "working_temp": "-20℃~50℃ / -4℉~122℉"
+      },
+      "name": "RCE-1U",
+      "describe": "RCE-1U は、検知と対応を目的として設計されたオールインワンの無人航空機 (UAV) 対策デバイスです。\nこの装置は、特定の周波数の電磁波を放射することによって UAV を妨害および対抗し、それによって UAV の通信またはナビゲーション リンクをブロックし、迅速な目標の方向転換または不時着を実現します。\nこの製品は、反作用モード、バッテリー残量、その他の情報をリアルタイムに表示します。\n単独で使用することも、UAV 検出製品と組み合わせて「Detect'n Strike」システムを形成することもできます。",
+      "describe_short": "RCE-1U 偵察"
+    },
+    "re1p": "RE-1P"
   }
 }

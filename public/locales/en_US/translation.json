@@ -40,6 +40,7 @@
     "uav": "UAV",
     "recon_module": "Reconnaissance Module",
     "required": "Required",
+    "send": "Send",
     "service": "Service",
     "services": "Services",
     "support": "Support",
@@ -90,18 +91,11 @@
       }
     },
     "re1p": "RE-1P",
-    "fpv_7inch": "7\" Analog FPV Drone",
-    "fpv_10inch": "10\" Analog FPV Drone"
+    "fpv_7inch": "7\" FPV Drone",
+    "fpv_10inch": "10\" FPV Drone"
   },
   "mention": {
     "rce1u": "We have fully test on DJI [Avatar, FPV, Mavic, Mavic Air, Mavic Mini, Mavic Phantom, Mavic Spark] and Parrot [ANAFI, Bebop, Bebop 2 Power]. Theoretically, this type of radio jamming device can effect to most of the devices including but not limited to [UAV, ground drones, mobile phones, remote controller (ground station), etc...]."
-  },
-  "about": {
-    "q_who": "What are we?",
-    "a_who": "We are a corp, made with a couple of scientist, a couple of genies engineers, and one part time designer.",
-    "q_where": "Where are we?",
-    "a_where": "We're working remotely, so we're everywhere?",
-    "": ""
   },
   "learn_more": {
     "q_what": "What is CUAS device?",
@@ -111,5 +105,45 @@
     "interesting": "We also have a cyberattack device under development, witch can hacking those type of drone and gain control permission. Check our [article](link) for more details.",
     "q_scenarios": "What are the application scenarios for this type of product?",
     "a_scenarios": "Applicable to the radio monitoring, low-altitude airspace safety prevention & control in locations of government and military organs, industry base, power plant, airport, border customs and coastal defense, etc. Or simply, applicable to any no-drone zone."
+  },
+  "detail": {
+    "applicable_jamming": "Applications",
+    "battery_life": "Battery Life",
+    "dimensions": "Dimension",
+    "jamming_freq": "Working Frequency",
+    "jamming_radius": "Working Radius",
+    "power_source": "Power Source",
+    "protect_level": "Protect Level",
+    "system_upgrade": "System Upgrade",
+    "tdp": "TDP",
+    "weight": "Weight",
+    "work_method": "Working Method",
+    "working_temp": "Working Temperature"
+  },
+  "detail_value": {
+    "applicable_jamming": "* Any radio device",
+    "battery_life": "Single charge: 6 hours",
+    "dimensions": "300 * 204 * 410 mm / 14\"",
+    "jamming_freq": "2.4GHz / 5.8GHz",
+    "jamming_radius": "Maximum Radius: ≥ 1000m",
+    "power_source": "DC 36V",
+    "protect_level": "IP65",
+    "system_upgrade": "OTA / LAN",
+    "tdp": "99 watt",
+    "weight": "1100g / 2.42 lbs",
+    "work_method": "Directional Radio Jamming",
+    "working_temp": "-20℃~50℃ / -4℉~122℉"
+  },
+  "products": {
+    "rce1u": "RCE-1U",
+    "rce1u_describe": "The RCE-1U is an integrated drone detection and countermeasure device. The device interferes with and counteracts drones by emitting electromagnetic waves in specific frequency bands, thereby disrupting the drone's communication or navigation links to quickly achieve the goal of driving away or forcing the landing of the target. This product displays real-time information such as countermeasure mode and battery level. It can be used independently or as part of a \"detection and strike\" system in conjunction with drone detection products.",
+    "rce1u_describe_short": "RCE-1U CUAS",
+    "re1p": "RE-1P"
+  },
+  "about": {
+    "q_who": "What are we?",
+    "a_who": "We are a corp, made with a couple of scientist, a couple of genies engineers, and one part time designer.",
+    "q_where": "Where are we?",
+    "a_where": "We're working remotely, so we're everywhere?"
   }
 }
