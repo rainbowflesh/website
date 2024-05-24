@@ -5,7 +5,7 @@ import { Consult } from "./pages/Consult";
 import { Contact } from "./pages/Contact";
 import { Home } from "./pages/Home";
 import { LearnMore } from "./pages/LearnMore";
-import { CuasIndex, UavIndex } from "./pages/Product";
+import { CuasIndex, Index, UavIndex } from "./pages/Product";
 import { RCE1U } from "./pages/products/rce1u";
 import { Services } from "./pages/Service";
 import { Void } from "./pages/Void";
@@ -20,6 +20,7 @@ export const PageRoutes = () => {
       <Route path="/consult" element={<Consult />}></Route>
       <Route path="/contact" element={<Contact />}></Route>
       <Route path="/learnmore" element={<LearnMore />}></Route>
+      <Route path="/product" element={<Index />}></Route>
       <Route path="/product/cuas" element={<CuasIndex />}></Route>
       <Route path="/product/uav" element={<UavIndex />}></Route>
       <Route path="/services" element={<Services />}></Route>

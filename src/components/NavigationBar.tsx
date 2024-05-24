@@ -44,7 +44,7 @@ export const NavigationBar = () => {
                     <ul>
                       <li>
                         <Link className="text-lg" to={"/product/cuas/rce1u"}>
-                          {t("product.rce1u")}
+                          {t("products.rce1u_describe_short")}
                         </Link>
                       </li>
                     </ul>

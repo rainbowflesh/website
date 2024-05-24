@@ -24,8 +24,11 @@ export const Home = () => {
             }}
             className="rounded-box  h-128"
           >
-            <img className="bg-center bg-cover m-auto" src="/images/rce1u/cover.png" />
-            <img className="bg-center bg-cover m-auto" src="/images/rce1u/back.jpg" />
+            <img className="bg-center bg-cover m-auto" src="/images/uav/fpv/10inch/cover.png" />
+            <img className="bg-center bg-cover m-auto" src="/images/uav/fpv/7inch/cover.png" />
+            <img className="bg-center bg-cover m-auto" src="/images/uav/placeholder_KalebKendall.jpg" />
+            <img className="bg-center bg-cover m-auto" src="/images/cuas/rce1u/cover.png" />
+            <img className="bg-center bg-cover m-auto" src="/images/cuas/rce1u/back.jpg" />
           </Carousel>
         </div>
         <div className="w-full sm:w-1/3">

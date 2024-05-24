@@ -58,3 +58,12 @@ export const UavIndex = () => {
     </main>
   );
 };
+
+export const Index = () => {
+  return (
+    <>
+      <UavIndex></UavIndex>
+      <CuasIndex></CuasIndex>
+    </>
+  );
+};
