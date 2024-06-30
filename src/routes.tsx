@@ -10,6 +10,7 @@ import { RCE1U } from "./pages/products/cuas/rce1u";
 import { Services } from "./pages/Service";
 import { Void } from "./pages/Void";
 import { Fpv10Inch, Fpv7Inch } from "@pages/products/fpv/index";
+import { AIModuleLokon1 } from "@pages/products/ai_module/lokon1";
 
 export const urls = {
   home: "/",
@@ -42,6 +43,7 @@ export const routes = [
   { path: urls.cuas_rce1u, element: <RCE1U /> },
   { path: urls.fpv_7inch, element: <Fpv7Inch /> },
   { path: urls.fpv_10inch, element: <Fpv10Inch /> },
+  { path: urls.ai_module_lokon1, element: <AIModuleLokon1 /> },
   // 404
   { path: "*", element: <Void /> },
 ];

@@ -145,7 +145,10 @@
     "rce1u": "RCE-1U",
     "rce1u_describe": "The RCE-1U is an integrated drone detection and countermeasure device. The device interferes with and counteracts drones by emitting electromagnetic waves in specific frequency bands, thereby disrupting the drone's communication or navigation links to quickly achieve the goal of driving away or forcing the landing of the target. This product displays real-time information such as countermeasure mode and battery level. It can be used independently or as part of a \"detection and strike\" system in conjunction with drone detection products.",
     "rce1u_describe_short": "RCE-1U CUAS",
-    "re1p": "RE-1P"
+    "re1p": "RE-1P",
+    "ai_module": {
+      "lokon1": "LOKON 1"
+    }
   },
   "about": {
     "q_who": "What are we?",
