@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "RainbowFleshNBP";
+  font-style: normal;
+  src: url("../public/fonts/RainbowFleshNBP.otf") format("opentype");
+}
+
 @media (prefers-color-scheme: light) {
   .line-background {
     background: repeating-linear-gradient(45deg, #fff, #fff 13px, #f2f2f2 13px, #f2f2f2 14px);

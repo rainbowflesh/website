@@ -54,7 +54,14 @@
     "wechat_value": "gin_shuzhao",
     "wechat": "WeChat",
     "cuas_device": "CUAS Device",
-    "counter_device": "Countermeasures Equipment"
+    "counter_device": "Countermeasures Equipment",
+    "copyright": "  © 2023 ZEEWIND Ltd., its logo, brand, products, service, and process names appearing in this website are the           trademarks or service marks of ZEEWIND Ltd., or its affiliated companies. All other brand, product, service,           and process names appearing are the trademarks of their respective holders. Nothing contained herein shall be           construed as conferring by implication, estoppel, or otherwise any license or right under any patent,           copyright, trademark, or other intellectual property right of ZEEWIND Ltd. or any third party, except as           expressly granted herein. All information in this website is for general information only, and can be changed           without notice.",
+    "tech_specs": "Tech Specs",
+    "showcase": "Showcase",
+    "contact_sales": "Contact Sales",
+    "ai_module": "AI Module",
+    "fpv": "FPV",
+    "smart_fpv": "Smart FPV"
   },
   "product": {
     "rce1u": {

@@ -5,31 +5,53 @@ import { Consult } from "./pages/Consult";
 import { Contact } from "./pages/Contact";
 import { Home } from "./pages/Home";
 import { LearnMore } from "./pages/LearnMore";
-import { CuasIndex, Index, UavIndex } from "./pages/Product";
+import { CuasIndex, Index, FPVIndex } from "./pages/Product";
 import { RCE1U } from "./pages/products/cuas/rce1u";
 import { Services } from "./pages/Service";
 import { Void } from "./pages/Void";
-import { UavFpv7Inch } from "./pages/products/uav/fpv/7inch";
-import { UavFpv10Inch } from "./pages/products/uav/fpv/10inch";
+import { Fpv10Inch, Fpv7Inch } from "@pages/products/fpv/index";
+
+export const urls = {
+  home: "/",
+  about: "/about",
+  consult: "/consult",
+  contact: "/contact",
+  learnmore: "/learnmore",
+  product: "/product",
+  product_cuas: "/product/cuas",
+  product_fpv: "/product/fpv",
+  product_ai_module: "/product/ai_module",
+  services: "/services",
+  cuas_rce1u: "/product/cuas/rce1u",
+  fpv_10inch: "/product/fpv/10inch",
+  fpv_7inch: "/product/fpv/7inch",
+  ai_module_lokon1: "/product/ai_module/lokon1",
+};
+
+export const routes = [
+  { path: urls.home, element: <Home /> },
+  { path: urls.about, element: <About /> },
+  { path: urls.consult, element: <Consult /> },
+  { path: urls.contact, element: <Contact /> },
+  { path: urls.learnmore, element: <LearnMore /> },
+  { path: urls.product, element: <Index /> },
+  { path: urls.product_cuas, element: <CuasIndex /> },
+  { path: urls.product_fpv, element: <FPVIndex /> },
+  { path: urls.services, element: <Services /> },
+  // products
+  { path: urls.cuas_rce1u, element: <RCE1U /> },
+  { path: urls.fpv_7inch, element: <Fpv7Inch /> },
+  { path: urls.fpv_10inch, element: <Fpv10Inch /> },
+  // 404
+  { path: "*", element: <Void /> },
+];
 
 export const PageRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />}></Route>
-      <Route path="/about" element={<About />}></Route>
-      <Route path="/consult" element={<Consult />}></Route>
-      <Route path="/contact" element={<Contact />}></Route>
-      <Route path="/learnmore" element={<LearnMore />}></Route>
-      <Route path="/product" element={<Index />}></Route>
-      <Route path="/product/cuas" element={<CuasIndex />}></Route>
-      <Route path="/product/uav" element={<UavIndex />}></Route>
-      <Route path="/services" element={<Services />}></Route>
-      {/* products */}
-      <Route path="/product/cuas/rce1u" element={<RCE1U />}></Route>
-      <Route path="/product/uav/fpv/7inch" element={<UavFpv7Inch />}></Route>
-      <Route path="/product/uav/fpv/10inch" element={<UavFpv10Inch />}></Route>
-      {/* 404 */}
-      <Route path="*" element={<Void />}></Route>
+      {routes.map((route, index) => (
+        <Route key={index} path={route.path} element={route.element} />
+      ))}
     </Routes>
   );
 };

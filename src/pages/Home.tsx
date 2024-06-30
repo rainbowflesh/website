@@ -1,6 +1,9 @@
 import { Button, Hero } from "react-daisyui";
 import { useTranslation } from "react-i18next";
+import { Analytics } from "@vercel/analytics/react";
 import { Link } from "react-router-dom";
+import { urls } from "../routes";
+
 import Carousel from "nuka-carousel";
 
 export const Home = () => {
@@ -8,7 +11,8 @@ export const Home = () => {
 
   return (
     <Hero className="dot-background dark:dot-background-dark h-dvh">
-      <Hero.Content className="text-center flex flex-col sm:flex-row -mt-16">
+      <Analytics />
+      <Hero.Content className="text-center flex flex-col sm:flex-row">
         <div className="rounded-box w-full sm:w-2/3 max-w-10/12 snap-center place-items-center">
           <Carousel
             autoplay
@@ -24,8 +28,8 @@ export const Home = () => {
             }}
             className="rounded-box  h-128"
           >
-            <img className="bg-center bg-cover m-auto bg-premium-color" src="/images/uav/fpv/10inch/cover.png" />
-            <img className="bg-center bg-cover m-auto bg-premium-color" src="/images/uav/fpv/7inch/cover.png" />
+            <img className="bg-center bg-cover m-auto bg-premium-color" src="/images/fpv/10inch/cover.png" />
+            <img className="bg-center bg-cover m-auto bg-premium-color" src="/images/fpv/7inch/cover.png" />
             <img className="bg-center bg-cover m-auto" src="/images/uav/placeholder_KalebKendall.jpg" />
             <img className="bg-center bg-cover m-auto" src="/images/cuas/rce1u/cover.png" />
             <img className="bg-center bg-cover m-auto" src="/images/cuas/rce1u/back.jpg" />
@@ -41,13 +45,16 @@ export const Home = () => {
               {t("string.company_introduce")}
             </p>
           </article>
-          <div>
-            <Button className="mr-8">
-              <Link to="/product">{t("string.learn_more")}</Link>
+          <div className="grid grid-flow-col auto-cols-auto">
+            <div className="size-1"></div>
+            <Button className="">
+              <Link to={urls.learnmore}>{t("string.learn_more")}</Link>
             </Button>
+            <div className="size-1"></div>
             <Button color="neutral">
-              <Link to="/contact">{t("string.buy_now")}</Link>
+              <Link to={urls.contact}>{t("string.buy_now")}</Link>
             </Button>
+            <div className="size-1"></div>
           </div>
         </div>
       </Hero.Content>

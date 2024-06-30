@@ -1,6 +1,7 @@
 import { Footer } from "react-daisyui";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { urls } from "../routes";
 
 export const FooterBar = () => {
   const { t } = useTranslation();
@@ -8,22 +9,22 @@ export const FooterBar = () => {
     <Footer className="p-10 bg-neutral text-neutral-content">
       <div>
         <Footer.Title>{t("string.product")}</Footer.Title>
-        <Link to={"/product/cuas"} className="link link-hover">
+        <Link to={urls.cuas_rce1u} className="link link-hover">
           {t("string.recon_module")}
         </Link>
-        <Link to={"/product/uav"} className="link link-hover">
-          {t("string.uav")}
+        <Link to={urls.product_fpv} className="link link-hover">
+          {t("string.smart_fpv")}
         </Link>
-        <Link to={"/product/accessories"} className="link link-hover">
-          {t("string.accessories")}
+        <Link to={urls.product_ai_module} className="link link-hover">
+          {t("string.ai_module")}
         </Link>
       </div>
       <div>
         <Footer.Title>{t("string.company")}</Footer.Title>
-        <Link to={"/about"} className="link link-hover">
+        <Link to={urls.about} className="link link-hover">
           {t("string.about")}
         </Link>
-        <Link to={"/contact"} className="link link-hover">
+        <Link to={urls.contact} className="link link-hover">
           {t("string.contact")}
         </Link>
       </div>
@@ -34,15 +35,7 @@ export const FooterBar = () => {
         </Link>
       </div>
       <div className="items-end px-8 ">
-        <p className="text-xs max-w-128">
-          © 2023 ZEEWIND Ltd., its logo, brand, products, service, and process names appearing in this website are the
-          trademarks or service marks of ZEEWIND Ltd., or its affiliated companies. All other brand, product, service,
-          and process names appearing are the trademarks of their respective holders. Nothing contained herein shall be
-          construed as conferring by implication, estoppel, or otherwise any license or right under any patent,
-          copyright, trademark, or other intellectual property right of ZEEWIND Ltd. or any third party, except as
-          expressly granted herein. All information in this website is for general information only, and can be changed
-          without notice.
-        </p>
+        <p className="text-xs max-w-128">{t("string.copyright")}</p>
       </div>
     </Footer>
   );

@@ -3,7 +3,8 @@ import { Dropdown, Menu, Navbar } from "react-daisyui";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { I18nMenu } from "./I18nMenu";
-import { LogoLight } from "./Logos";
+import { Logo } from "./Logos";
+import { urls } from "../routes";
 
 export const NavigationBar = () => {
   const { t } = useTranslation();
@@ -24,7 +25,7 @@ export const NavigationBar = () => {
   return (
     <Navbar className="line-background px-2 font-sans bg-base-300 rounded-box border-2 mx-auto max-w-screen-xl sm:px-6 lg:px-8 h-4">
       <Navbar.Start className="flex flex-wrap md:flex-wrap-reverse truncate">
-        <LogoLight />
+        <Logo />
       </Navbar.Start>
       <Navbar.Center className="flex flex-wrap md:flex-wrap-reverse h-16 items-center justify-between z-50">
         <div className="hidden md:block" aria-label="Global">
@@ -38,30 +39,30 @@ export const NavigationBar = () => {
                 <summary>{t("string.products")}</summary>
                 <ul id="navbar-dropdown1" className="bg-slate-50 dark:bg-base-300 items-start min-w-max">
                   <li>
-                    <Link className="text-stone-500 dark:text-stone-400" to="/product/uav">
-                      Unmanned Aerial Vehicle
+                    <Link className="text-stone-500 dark:text-stone-400" to={urls.product_fpv}>
+                      Smart FPV
                     </Link>
                     <ul>
                       <li>
-                        <Link className="text-lg" to={"/product/uav/fpv/7inch"}>
+                        <Link className="text-lg" to={urls.fpv_7inch}>
                           {t("product.fpv_7inch")}
                         </Link>
                       </li>
                       <li>
-                        <Link className="text-lg" to={"/product/uav/fpv/10inch"}>
+                        <Link className="text-lg" to={urls.fpv_10inch}>
                           {t("product.fpv_10inch")}
                         </Link>
                       </li>
                     </ul>
                   </li>
                   <li className=" items-start ">
-                    <Link className="text-stone-500 dark:text-stone-400" to="/product/cuas">
-                      {t("string.recon_module")}
+                    <Link className="text-stone-500 dark:text-stone-400" to={urls.product_ai_module}>
+                      {t("string.ai_module")}
                     </Link>
                     <ul>
                       <li>
-                        <Link className="text-lg" to={"/product/cuas/rce1u"}>
-                          {t("products.rce1u_describe_short")}
+                        <Link className="text-lg" to={urls.ai_module_lokon1}>
+                          {t("products.lokon1_describe_short")}
                         </Link>
                       </li>
                     </ul>
@@ -69,18 +70,13 @@ export const NavigationBar = () => {
                 </ul>
               </details>
             </Menu.Item>
-          </Menu>
-          <Menu horizontal={true}>
-            {/* <Menu.Item className="relative">
-              <Link to={"/consult"}>{t("string.consult")}</Link>
-            </Menu.Item> */}
             <Menu.Item className="relative">
-              <Link to={"/contact"} className="ghost rounded">
+              <Link to={urls.contact} className="ghost rounded">
                 {t("string.contact")}
               </Link>
             </Menu.Item>
             <Menu.Item className="relative">
-              <Link to={"/about"} className="ghost rounded">
+              <Link to={urls.about} className="ghost rounded">
                 {t("string.about")}
               </Link>
             </Menu.Item>
@@ -110,18 +106,18 @@ export const NavigationBar = () => {
             <Dropdown.Menu className="w-52 mt-2 -ml-32">
               <Dropdown.Item
                 onClick={() => {
-                  navigate("products");
+                  navigate("product");
                 }}
               >
                 {t("string.products")}
               </Dropdown.Item>
-              <Dropdown.Item
+              {/* <Dropdown.Item
                 onClick={() => {
                   navigate("services");
                 }}
               >
                 {t("string.services")}
-              </Dropdown.Item>
+              </Dropdown.Item> */}
             </Dropdown.Menu>
           </div>
         </Dropdown>

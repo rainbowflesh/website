@@ -15,4 +15,11 @@ export default defineConfig({
       },
     },
   },
+  resolve: {
+    alias: {
+      "@components": new URL("./src/components", import.meta.url).pathname,
+      "@utils": new URL("./src/utils", import.meta.url).pathname,
+      "@pages": new URL("./src/pages", import.meta.url).pathname,
+    },
+  },
 });
