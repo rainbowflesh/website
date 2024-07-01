@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { urls } from "../routes";
 import React from "react";
+
 interface ProductProps {
   imageUrl1: string;
   imageUrl2: string;
@@ -13,7 +14,6 @@ interface ProductProps {
 
 const ProductCard: React.FC<ProductProps> = ({ imageUrl1, imageUrl2, productUrl, productName, tKey }) => {
   const { t } = useTranslation();
-
   return (
     <Card className="px-4 m-auto">
       <Link className="group m-auto mt-4" to={productUrl}>
@@ -39,7 +39,6 @@ const ProductCard: React.FC<ProductProps> = ({ imageUrl1, imageUrl2, productUrl,
 
 const CuasIndex: React.FC = () => {
   const { t } = useTranslation();
-
   return (
     <main className="dot-background p-8 flex flex-col">
       <h1 className="text-5xl font-bold m-auto text-center mb-4">{t("string.cuas_device")}</h1>
@@ -58,7 +57,6 @@ const CuasIndex: React.FC = () => {
 
 const FPVIndex: React.FC = () => {
   const { t } = useTranslation();
-
   return (
     <main className="dot-background p-8 flex flex-col">
       <h1 className="text-5xl font-bold m-auto text-center mb-4">{t("string.uav")}</h1>
@@ -82,14 +80,11 @@ const FPVIndex: React.FC = () => {
   );
 };
 
-export { CuasIndex, FPVIndex };
-
-export const AIModuleIndex = () => {
+const AIModuleIndex = () => {
   const { t } = useTranslation();
-
   return (
     <main className="dot-background p-8 flex flex-col">
-      <h1 className="text-5xl font-bold m-auto text-center mb-4">{t("string.uav")}</h1>
+      <h1 className="text-5xl font-bold m-auto text-center mb-4">{t("string.ai_module")}</h1>
       <div className="bg-gray-100 dark:bg-black p-8 mx-auto max-w-2xl lg:max-w-none mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
         <ProductCard
           imageUrl1="/images/ai_module/lokon1/InfraCamera.png"
@@ -103,12 +98,13 @@ export const AIModuleIndex = () => {
   );
 };
 
-export const Index = () => {
+const Index = () => {
   return (
     <>
-      <FPVIndex />
-      <CuasIndex />
       <AIModuleIndex />
+      <FPVIndex />
     </>
   );
 };
+
+export { Index, AIModuleIndex, CuasIndex, FPVIndex };

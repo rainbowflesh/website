@@ -18,7 +18,7 @@ const VideoPlayerModal = () => {
     setIsModalOpen(true);
     if (!playerRef.current) {
       playerRef.current = YouTubePlayer("player", {
-        videoId: "UPqeiuFd7SE",
+        videoId: "VmhQKI8hNto",
         width: "100%",
         height: "400px",
       });
@@ -42,7 +42,7 @@ const VideoPlayerModal = () => {
       />
       <Modal open={isModalOpen}>
         <Modal.Header>
-          Fpv Strike Demo
+          Demo Video
           <Button
             size="sm"
             color="error"
@@ -72,7 +72,19 @@ const VideoPlayerModal = () => {
 
 export const AIModuleLokon1 = () => {
   const { t } = useTranslation();
-  const features = [{ name: t("detail.work_method"), description: t("detail_value.work_method") }];
+  const features = [
+    { name: t("string.ai_cam"), description: t("detail_value.ai_cam") },
+    { name: t("string.work_method"), description: t("detail_value.ai_cam_description") },
+    { name: t("string.wa_cam"), description: t("detail_value.wa_cam") },
+    { name: t("string.work_method"), description: t("detail_value.wa_cam_description") },
+    { name: t("string.ir_cam"), description: t("detail_value.ir_cam") },
+    { name: t("string.work_method"), description: t("detail_value.ir_cam_description") },
+    { name: t("string.accuracy"), description: t("detail_value.ai_accuracy") },
+    { name: t("string.tdp"), description: t("detail_value.ai_tdp") },
+    { name: t("string.size"), description: t("detail_value.ai_size") },
+    { name: t("string.weight"), description: t("detail_value.ai_weight") },
+    { name: t("string.powersource"), description: t("detail_value.ai_powersource") },
+  ];
   return (
     <div className="dot-background">
       <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-12 sm:px-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
@@ -81,10 +93,17 @@ export const AIModuleLokon1 = () => {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
               {t("string.tech_specs")}
             </h2>
-            <p className="mt-4 text-gray-500 dark:text-gray-400 ">{t("products.ai_module.lokon1")}</p>
-            <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+            <p className="pt-4 pb-4 text-lg text-gray-500 dark:text-gray-400 ">{t("product.ai_module_lokon1")}</p>
+            <p>
+              This intelligent tracking module features FPV terminal image guidance, enabling automatic FPV drone
+              tracking of targets until collision after manually locking the target with the remote controller. The
+              smart module includes a processing unit and a camera (replacing the original FPV system's own camera),
+              requiring integration into the existing FPV drone system with flight control and video transmission
+              connections.
+            </p>
+            <dl className="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
               {features.map((feature) => (
-                <div key={feature.name} className="border-t border-gray-200 pt-4">
+                <div key={feature.name} className="border-t border-gray-200 pt-2">
                   <dt className="font-medium text-gray-900 dark:text-gray-50">{feature.name}</dt>
                   <dd className="mt-2 text-sm text-gray-500 dark:text-gray-400">{feature.description}</dd>
                 </div>
@@ -99,11 +118,10 @@ export const AIModuleLokon1 = () => {
           />
           <img
             src="/images/ai_module/lokon1/InfraCamera.png"
-            className="product-detail-img-p1 rounded-lg bg-gray-100 dark:bg-base-200 rounded-lg shadow-lg"
+            className="product-detail-img-p1 bg-gray-100 dark:bg-base-200 rounded-lg shadow-lg"
           />
           <VideoPlayerModal />
         </div>
-        <p className="text-xs text-balance bg-white dark:bg-black rounded-box">* {t("mention.rce1u")}</p>
       </div>
     </div>
   );

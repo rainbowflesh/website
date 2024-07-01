@@ -24,7 +24,7 @@ export const NavigationBar = () => {
 
   return (
     <Navbar className="line-background px-2 font-sans bg-base-300 rounded-box border-2 mx-auto max-w-screen-xl sm:px-6 lg:px-8 h-4">
-      <Navbar.Start className="flex flex-wrap md:flex-wrap-reverse truncate">
+      <Navbar.Start className="flex flex-wrap md:flex-wrap-reverse truncate -ml-4">
         <Logo />
       </Navbar.Start>
       <Navbar.Center className="flex flex-wrap md:flex-wrap-reverse h-16 items-center justify-between z-50">
@@ -40,17 +40,18 @@ export const NavigationBar = () => {
                 <ul id="navbar-dropdown1" className="bg-slate-50 dark:bg-base-300 items-start min-w-max">
                   <li>
                     <Link className="text-stone-500 dark:text-stone-400" to={urls.product_fpv}>
-                      Smart FPV
+                      {t("string.smart_fpv")}
                     </Link>
                     <ul>
-                      <li>
-                        <Link className="text-lg" to={urls.fpv_7inch}>
-                          {t("product.fpv_7inch")}
-                        </Link>
-                      </li>
+                      {" "}
                       <li>
                         <Link className="text-lg" to={urls.fpv_10inch}>
                           {t("product.fpv_10inch")}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="text-lg" to={urls.fpv_7inch}>
+                          {t("product.fpv_7inch")}
                         </Link>
                       </li>
                     </ul>
@@ -62,7 +63,7 @@ export const NavigationBar = () => {
                     <ul>
                       <li>
                         <Link className="text-lg" to={urls.ai_module_lokon1}>
-                          {t("products.lokon1_describe_short")}
+                          {t("product.ai_module_lokon1")}
                         </Link>
                       </li>
                     </ul>
