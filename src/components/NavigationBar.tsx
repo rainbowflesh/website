@@ -80,6 +80,11 @@ export const NavigationBar = () => {
                 {t("string.about")}
               </Link>
             </Menu.Item>
+            <Menu.Item className="relative">
+              <Link to={urls.support} className="ghost rounded">
+                {t("string.support")}
+              </Link>
+            </Menu.Item>
           </Menu>
         </div>
       </Navbar.Center>

@@ -28,9 +28,8 @@ export const Home = () => {
             }}
             className="rounded-box  h-128"
           >
-            <img className="bg-center bg-cover m-auto bg-premium-color" src="/images/fpv/10inch/cover.png" />
-            <img className="bg-center bg-cover m-auto bg-premium-color" src="/images/fpv/7inch/cover.png" />
             <img className="bg-cover" src="/images/ai_module/lokon1/cover.jpg" />
+            <img className="bg-center bg-cover m-auto bg-premium-color" src="/images/fpv/10inch/cover.png" />
           </Carousel>
         </div>
         <div className="w-full sm:w-1/3">
