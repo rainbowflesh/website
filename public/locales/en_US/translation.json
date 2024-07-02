@@ -12,13 +12,11 @@
     "buy_now": "Buy Now",
     "ci": "We create war machines.",
     "company_introduce": "We development and production AI target tracking and terminal guidance equipment, commonly known as AI module. Our commitment lies in providing robust airspace intelligent UAV system. Beyond this, ZEEWIND extends its services to include industry-specific consulting, assisting clients in comprehending and fulfilling their unique professional requirements.",
-    "company_name_full": "深圳市新蛋科技有限公司",
+    "company_name_full": "ZEEWIND Inc,.",
     "company_name_short": "ZEEWIND",
     "company_slogan": "Advanced Intelligent UAV System",
     "company": "Company",
     "consult": "Consult",
-    "consults": "Consults",
-    "contact_sales": "Contact Sales",
     "contact_us_mention": "Due to the spam prevention, if you didn't received our reply in 5 work days, please contact us directly.",
     "contact_us": "Contact sales",
     "contact": "Contact",
@@ -41,25 +39,20 @@
     "learn_more": "Learn more",
     "leave_ur_contact": "Leave your contact",
     "legal": "Legal",
-    "legals": "Legals",
     "optional": "Optional",
     "or": "Or",
     "phone": "Phone",
-    "power_source": "Power Source",
     "product_catalog": "Product Catalog",
     "product_list": "Product List",
     "product": "Product",
-    "products": "Products",
     "protect_level": "Protect Level",
     "recon_module": "Reconnaissance Module",
     "required": "Required",
     "send": "Send",
     "service": "Service",
-    "services": "Services",
     "showcase": "Showcase",
     "smart_fpv": "Smart FPV",
     "support": "Support",
-    "supports": "Supports",
     "system_upgrade": "System Upgrade",
     "tdp": "TDP",
     "tech_specs": "Tech Specs",
@@ -73,24 +66,18 @@
     "ur_msg_placeholder": "Leave anything you want to know",
     "ur_msg": "Your message",
     "wa_cam": "Wide Angle Cam (Optional)",
-    "wechat_value": "gin_shuzhao",
     "wechat": "WeChat",
     "weight": "Weight",
     "work_method": "Working Method",
     "working_temp": "Working Temperature",
     "size": "Size",
     "powersource": "Power Source",
-    "user_manual": "User Manual"
+    "user_manual": "User Manual",
+    "contact_sale": "Contact Sale"
   },
   "product": {
     "rce1u": {
-      "name": "RCE-1U",
-      "describe_short": "RCE-1U The Reconnaissance & Countermeasures Device",
-      "describe": "The RCE-1U is an all-in-one unmanned aerial vehicle (UAV) countermeasure device designed for detection and counteraction. The device disrupts and counters UAVs by emitting specific frequency electromagnetic waves, thereby blocking the communication or navigation links of the UAV and achieving rapid target diversion or forced landing. This product provides real-time display of counteraction modes, battery levels, and other information. It can be used independently or combined with UAV detection products to form a \"Detect'n Strike\" system.",
       "spec_name": {
-        "applicable_jamming": "Applications",
-        "battery_life": "Battery Life",
-        "dimensions": "Dimensions",
         "jamming_freq": "Jamming Frequency",
         "jamming_radius": "Jamming Radius",
         "power_source": "Power Source",
@@ -112,27 +99,15 @@
         "system_upgrade": "OTA / LAN",
         "tdp": "99 watt",
         "weight": "1100g / 2.42 lbs",
-        "work_method": "Directional Radio Jamming",
-        "working_temp": "-20℃~50℃ / -4℉~122℉"
+        "work_method": "Directional Radio Jamming"
       }
     },
-    "re1p": "RE-1P",
     "fpv_7inch": "7\" FPV Drone",
     "fpv_10inch": "10\" FPV Drone",
     "ai_module_lokon1": "Lokon Gen 1"
   },
-  "mention": {
-    "rce1u": "We have fully test on DJI [Avatar, FPV, Mavic, Mavic Air, Mavic Mini, Mavic Phantom, Mavic Spark] and Parrot [ANAFI, Bebop, Bebop 2 Power]. Theoretically, this type of radio jamming device can effect to most of the devices including but not limited to [UAV, ground drones, mobile phones, remote controller (ground station), etc...]."
-  },
-  "learn_more": {
-    "q_what": "What is CUAS device?",
-    "a_what": "CUAS is type of device which dedicated to defense unmaned-vehicle invasion, or a more radical approach: they attack.",
-    "q_what_zeewind_provide": "What services or products does ZEEWIND provide?",
-    "a_what_zeewind_provide": "We are providing integrated detection and countermeasures equipment, aka \"AiO CUAS Device\" RCE-1U; Zeewind's philosophy is different from the common products on the market that focus on defense. We prefer to take the initiative.",
-    "interesting": "We also have a cyberattack device under development, witch can hacking those type of drone and gain control permission. Check our [article](link) for more details.",
-    "q_scenarios": "What are the application scenarios for this type of product?",
-    "a_scenarios": "Applicable to the radio monitoring, low-altitude airspace safety prevention & control in locations of government and military organs, industry base, power plant, airport, border customs and coastal defense, etc. Or simply, applicable to any no-drone zone."
-  },
+  "mention": {},
+  "learn_more": {},
   "detail_value": {
     "ai_cam": "Resolution: 1280*960 px | DFOV: 46°(H) * 35°(V)",
     "ai_tdp": "5w",
@@ -159,10 +134,5 @@
     "work_method": "Directional Radio Jamming",
     "working_temp": "-20℃~50℃ / -4℉~122℉"
   },
-  "about": {
-    "q_who": "What are we?",
-    "a_who": "We are a corp, made with a couple of scientist, a couple of genies engineers, and one part time designer.",
-    "q_where": "Where are we?",
-    "a_where": "We're working remotely, so we're everywhere?"
-  }
+  "about": {}
 }

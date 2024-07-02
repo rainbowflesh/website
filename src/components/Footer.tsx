@@ -32,7 +32,7 @@ export const FooterBar = () => {
         </Link>
       </div>
       <div className="items-end px-8 ">
-        <p className="text-xs max-w-128 sm:hidden">{t("string.copyright")}</p>
+        <p className="text-xs max-w-128">{t("string.copyright")}</p>
       </div>
     </Footer>
   );

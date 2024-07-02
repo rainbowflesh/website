@@ -1,4 +1,4 @@
-import { Hero, Timeline } from "react-daisyui";
+import { Hero } from "react-daisyui";
 
 export const About = () => {
   return (
@@ -12,8 +12,8 @@ export const About = () => {
             ZEEWIND is a high-tech company that integrates design, research, and manufacturing, specializing in the
             development of special-purpose drones.
             <br />
-            <br /> Over the past three years, ZEEWIND has grown rapidly, now boasting a total of 150 employees, with
-            over 100 dedicated to R&D. <br />
+            <br /> Over the past three years, ZEEWIND has grown rapidly, now boasting a total of 30 employees, with over
+            20 dedicated to R&D. <br />
             <br />
             We are committed to advancing the frontiers of drone technology, particularly in ensuring reliable
             positioning and navigation in GPS-denied environments. Our core strengths lie in our unique algorithms,

@@ -26,7 +26,7 @@ const FPVPageLayout: React.FC<FpvProps> = ({ imagePath }) => {
             {t("string.tech_specs")}
           </Tabs.Tab>
           <Tabs.Tab className="max-w-fit" active={activeTab === "contact"} onClick={() => handleTabClick("contact")}>
-            {t("string.contact_sales")}
+            {t("string.contact_sale")}
           </Tabs.Tab>
         </Tabs>
       </div>
