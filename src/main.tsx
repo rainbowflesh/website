@@ -20,7 +20,7 @@ i18n
   .init({
     fallbackLng: "en_US",
     supportedLngs: ["en_US", "zh_cn", "ru_RU", "ja_JP"],
-    debug: true,
+    debug: false,
     load: "all",
     interpolation: {
       escapeValue: false,

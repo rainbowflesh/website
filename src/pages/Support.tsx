@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Card, Hero, Link, Table, Tooltip } from "react-daisyui";
+import { Button, Card, Divider, Hero, Link, Table, Tooltip } from "react-daisyui";
 import { useTranslation } from "react-i18next";
 
 interface TableRow {
@@ -58,14 +58,14 @@ export const Support: React.FC = () => {
       action: TableAction("downloads/documents/ai_module_lokon1_readme_zh.pdf"),
     },
     {
-      id: 2,
+      id: 3,
       category: "AI Module",
       name: "LoKon Gen1",
       type: "Brochure",
       action: TableAction("downloads/documents/ai_module_lokon1_brochure.pdf"),
     },
     {
-      id: 3,
+      id: 4,
       category: "Smart FPV",
       name: "10 Inch",
       type: "Brochure",
@@ -73,7 +73,7 @@ export const Support: React.FC = () => {
     },
   ];
 
-  const [data, setData] = useState<TableRow[]>(TableBody);
+  const [data] = useState<TableRow[]>(TableBody);
 
   const [filteredData, setFilteredData] = useState<TableRow[]>(data);
   const [sortConfig, setSortConfig] = useState<{ key: keyof TableRow; direction: "asc" | "desc" | null }>({
@@ -96,12 +96,12 @@ export const Support: React.FC = () => {
   };
 
   return (
-    <Hero>
+    <Hero className="dot-background dark:dot-background-dark flex-1">
       <Hero.Content className="text-center">
-        <div className="max-w-xl">
+        <div className="max-w-xl bg-slate-50 dark:bg-base-200 rounded-box p-4">
           <h1 className="text-5xl font-bold">Support center</h1>
           <p className="py-6">Download product brochures and manuals.</p>
-          <Card side="lg">
+          <Card side="lg" className="bg-slate-100 dark:bg-base-300 rounded-box ">
             <Card.Body>
               <Table>
                 <Table.Head>
@@ -127,6 +127,14 @@ export const Support: React.FC = () => {
               </Table>
             </Card.Body>
           </Card>
+          <div>
+            <Divider className="dark:text-white ">{t("string.or")}</Divider>
+            <h1 className="text-4xl font-bold mt-2 mb-2">Email us directly</h1>
+            <a className="text-gray-400 mb-2" href={"mailto:contact@zeewind-uav.com"}>
+              <span className="text-black dark:text-white">Tech support: </span>
+              contact@zeewind-uav.com
+            </a>
+          </div>
         </div>
       </Hero.Content>
     </Hero>

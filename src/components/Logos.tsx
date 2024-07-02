@@ -8,10 +8,9 @@ export const Logo = () => {
   return (
     <Link to={urls.home}>
       <Button className="text-xl text-left normal-case md:flex md:items-center" color="ghost">
-        {/* <img src="/favicon.svg" className="size-12 left-1 mr-auto text-left " /> */}
         <div className="flex flex-col -mt-1.5">
-          <span className={"self-start font-logo text-4xl"}>{t("string.company_name_short")}</span>
-          <span className="text-sm font-light block -mt-2">{t("string.company_slogan")}</span>
+          <span className={"self-start font-logo text-4xl"}>{t("text.company_name_short")}</span>
+          <span className="text-sm font-light block -mt-2">{t("text.company_slogan")}</span>
         </div>
       </Button>
     </Link>

@@ -6,11 +6,11 @@ import { urls } from "../routes";
 export const LearnMore = () => {
   const { t } = useTranslation();
   return (
-    <div>
-      <Hero className="min-h-[30rem] w-4/5 m-auto  max-h-screen">
+    <div className="dot-background dark:dot-background-dark flex-1 p-8">
+      <Hero className="min-h-[30rem] w-4/5 bg-slate-50 dark:bg-base-200 max-h-screen m-auto rounded-box">
         <Hero.Content>
           <div>
-            <h1 className="text-5xl font-bold m-auto text-center">Learn more about AI module!</h1>
+            <h1 className="text-5xl font-bold m-auto text-center">{t("text.learnmore")}</h1>
             <p className="p-6 bg-base-200">
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In
               deleniti eaque aut repudiandae et a id nisi.

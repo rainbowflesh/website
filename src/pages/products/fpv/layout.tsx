@@ -16,7 +16,7 @@ const FPVPageLayout: React.FC<FpvProps> = ({ imagePath }) => {
   };
 
   return (
-    <main className="p-4">
+    <main className="p-4 dot-background dark:dot-background-dark">
       <div className="flex flex-col items-start gap-6 left-0">
         <Tabs className="lg:tabs-md md:tabs-sm sm:tabs-xs" variant="lifted">
           <Tabs.Tab className="max-w-fit" active={activeTab === "showcase"} onClick={() => handleTabClick("showcase")}>

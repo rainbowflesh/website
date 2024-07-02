@@ -35,12 +35,12 @@ export const Home = () => {
         </div>
         <div className="w-full sm:w-1/3">
           <article className="text-wrap">
-            <h1 className="text-5xl font-bold">{t("string.greeting")}</h1>
+            <h1 className="text-5xl font-bold">{t("text.greeting")}</h1>
             <p
               id="company-introduce"
               className="company-introduce py-6 bg-slate-50 dark:bg-base-200 rounded-box mt-2 mb-2 text-balance"
             >
-              {t("string.company_introduce")}
+              {t("text.company_introduce")}
             </p>
           </article>
           <div className="grid grid-flow-col auto-cols-auto">

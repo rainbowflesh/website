@@ -36,7 +36,7 @@ export const NavigationBar = () => {
               onMouseLeave={handleProductMenuMouseLeave}
             >
               <details open={isProductMenuOpen}>
-                <summary>{t("string.products")}</summary>
+                <summary>{t("string.product")}</summary>
                 <ul id="navbar-dropdown1" className="bg-slate-50 dark:bg-base-300 items-start min-w-max">
                   <li>
                     <Link className="text-stone-500 dark:text-stone-400" to={urls.product_fpv}>
@@ -45,12 +45,12 @@ export const NavigationBar = () => {
                     <ul>
                       <li>
                         <Link className="text-lg" to={urls.fpv_10inch}>
-                          {t("product.fpv_10inch")}
+                          {t("product.fpv.10inch.name")}
                         </Link>
                       </li>
                       <li>
                         <Link className="text-lg" to={urls.fpv_7inch}>
-                          {t("product.fpv_7inch")}
+                          {t("product.fpv.7inch.name")}
                         </Link>
                       </li>
                     </ul>
@@ -62,7 +62,7 @@ export const NavigationBar = () => {
                     <ul>
                       <li>
                         <Link className="text-lg" to={urls.ai_module_lokon1}>
-                          {t("product.ai_module_lokon1")}
+                          {t("product.ai_module.lokon1.name")}
                         </Link>
                       </li>
                     </ul>
@@ -108,13 +108,13 @@ export const NavigationBar = () => {
                 </svg>
               </button>
             </Dropdown.Toggle>
-            <Dropdown.Menu className="w-52 mt-2 -ml-32">
+            <Dropdown.Menu className="w-52 mt-2 -ml-32 dark:bg-gray-950">
               <Dropdown.Item
                 onClick={() => {
                   navigate("product");
                 }}
               >
-                {t("string.products")}
+                {t("string.product")}
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {

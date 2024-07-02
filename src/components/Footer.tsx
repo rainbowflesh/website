@@ -28,11 +28,11 @@ export const FooterBar = () => {
       <div>
         <Footer.Title>{t("string.legal")}</Footer.Title>
         <Link to={"/tos"} className="link link-hover">
-          {t("string.tos")}
+          {t("text.tos")}
         </Link>
       </div>
       <div className="items-end px-8 ">
-        <p className="text-xs max-w-128">{t("string.copyright")}</p>
+        <p className="text-xs max-w-128">{t("text.copyright")}</p>
       </div>
     </Footer>
   );
