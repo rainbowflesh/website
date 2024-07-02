@@ -48,28 +48,28 @@ export const Support: React.FC = () => {
       category: "AI Module",
       name: "LoKon Gen1",
       type: t("string.user_manual"),
-      action: TableAction("public/downloads/documents/ai_module_lokon1_readme.pdf"),
+      action: TableAction("downloads/documents/ai_module_lokon1_readme.pdf"),
     },
     {
       id: 2,
       category: "AI Module",
       name: "LoKon Gen1",
       type: "用户手册",
-      action: TableAction("public/downloads/documents/ai_module_lokon1_readme_zh.pdf"),
+      action: TableAction("downloads/documents/ai_module_lokon1_readme_zh.pdf"),
     },
     {
       id: 2,
       category: "AI Module",
       name: "LoKon Gen1",
       type: "Brochure",
-      action: TableAction("public/downloads/documents/ai_module_lokon1_brochure.pdf"),
+      action: TableAction("downloads/documents/ai_module_lokon1_brochure.pdf"),
     },
     {
       id: 3,
       category: "Smart FPV",
       name: "10 Inch",
       type: "Brochure",
-      action: TableAction("public/downloads/documents/smart_fpv_10_inch.pdf"),
+      action: TableAction("downloads/documents/smart_fpv_10_inch.pdf"),
     },
   ];
 
