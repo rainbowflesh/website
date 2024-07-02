@@ -10,7 +10,7 @@ export const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <Hero className="dot-background dark:dot-background-dark max-h-screen">
+    <Hero className="dot-background dark:dot-background-dark flex-1">
       <Analytics />
       <Hero.Content className="text-center flex flex-col sm:flex-row">
         <div className="rounded-box m-auto w-full sm:w-2/3 max-w-10/12">

@@ -58,7 +58,7 @@ const CuasIndex: React.FC = () => {
 const FPVIndex: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <div className="dot-background p-8 flex flex-col">
+    <div className="dot-background p-8 flex-1">
       <h1 className="text-5xl font-bold m-auto text-center mb-4">{t("string.uav")}</h1>
       <div className="bg-gray-200 dark:bg-black p-8 mx-auto max-w-2xl lg:max-w-none mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
         <ProductCard
@@ -83,10 +83,10 @@ const FPVIndex: React.FC = () => {
 const AIModuleIndex = () => {
   const { t } = useTranslation();
   return (
-    <div className="dot-background p-8 flex flex-col">
+    <div className="dot-background p-8 flex-1">
       <h1 className="text-5xl font-bold m-auto text-center mb-4">{t("string.ai_module")}</h1>
       <div style={{ height: "50lvh" }}>
-        <div className="bg-gray-100 dark:bg-black p-8 mx-auto max-w-2xl lg:max-w-none mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+        <div className="bg-gray-100 dark:bg-black p-8 mx-auto max-w-md lg:max-w-none mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
           <ProductCard
             imageUrl1="/images/ai_module/lokon1/smart_cam_sys.png"
             imageUrl2="/images/ai_module/lokon1/cover.jpg"

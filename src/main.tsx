@@ -30,8 +30,10 @@ i18n
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <NavigationBar />
-      <PageRoutes />
+      <div className="min-h-screen flex flex-col">
+        <NavigationBar />
+        <PageRoutes />
+      </div>
       <FooterBar />
     </BrowserRouter>
   </React.StrictMode>
