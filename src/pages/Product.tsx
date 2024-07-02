@@ -40,7 +40,7 @@ const ProductCard: React.FC<ProductProps> = ({ imageUrl1, imageUrl2, productUrl,
 const CuasIndex: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <main className="dot-background p-8 flex flex-col">
+    <div className="dot-background p-8 flex flex-col">
       <h1 className="text-5xl font-bold m-auto text-center mb-4">{t("string.cuas_device")}</h1>
       <div className="bg-gray-100 dark:bg-black p-8 mx-auto max-w-2xl lg:max-w-none mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
         <ProductCard
@@ -51,16 +51,23 @@ const CuasIndex: React.FC = () => {
           tKey="products.rce1u"
         />
       </div>
-    </main>
+    </div>
   );
 };
 
 const FPVIndex: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <main className="dot-background p-8 flex flex-col">
+    <div className="dot-background p-8 flex flex-col">
       <h1 className="text-5xl font-bold m-auto text-center mb-4">{t("string.uav")}</h1>
-      <div className="bg-gray-100 dark:bg-black p-8 mx-auto max-w-2xl lg:max-w-none mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+      <div className="bg-gray-200 dark:bg-black p-8 mx-auto max-w-2xl lg:max-w-none mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+        <ProductCard
+          imageUrl1="/images/fpv/10inch/digital_preview.png"
+          imageUrl2="/images/fpv/10inch/analog_preview.png"
+          productUrl={urls.fpv_10inch}
+          productName="product.fpv_10inch"
+          tKey="product.fpv_10inch"
+        />
         <ProductCard
           imageUrl1="/images/fpv/7inch/analog_preview.png"
           imageUrl2="/images/fpv/7inch/digital_preview.png"
@@ -68,42 +75,37 @@ const FPVIndex: React.FC = () => {
           productName="product.fpv_7inch"
           tKey="product.fpv_7inch"
         />
-        <ProductCard
-          imageUrl1="/images/fpv/10inch/analog_preview.png"
-          imageUrl2="/images/fpv/10inch/digital_preview.png"
-          productUrl={urls.fpv_10inch}
-          productName="product.fpv_10inch"
-          tKey="product.fpv_10inch"
-        />
       </div>
-    </main>
+    </div>
   );
 };
 
 const AIModuleIndex = () => {
   const { t } = useTranslation();
   return (
-    <main className="dot-background p-8 flex flex-col">
+    <div className="dot-background p-8 flex flex-col">
       <h1 className="text-5xl font-bold m-auto text-center mb-4">{t("string.ai_module")}</h1>
-      <div className="bg-gray-100 dark:bg-black p-8 mx-auto max-w-2xl lg:max-w-none mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
-        <ProductCard
-          imageUrl1="/images/ai_module/lokon1/InfraCamera.png"
-          imageUrl2="/images/ai_module/lokon1/InfraCamera.png"
-          productUrl={urls.ai_module_lokon1}
-          productName="product.ai_module_lokon1"
-          tKey="product.ai_module_lokon1"
-        />
+      <div style={{ height: "50lvh" }}>
+        <div className="bg-gray-100 dark:bg-black p-8 mx-auto max-w-2xl lg:max-w-none mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+          <ProductCard
+            imageUrl1="/images/ai_module/lokon1/smart_cam_sys.png"
+            imageUrl2="/images/ai_module/lokon1/cover.jpg"
+            productUrl={urls.ai_module_lokon1}
+            productName="product.ai_module_lokon1"
+            tKey="product.ai_module_lokon1"
+          />
+        </div>
       </div>
-    </main>
+    </div>
   );
 };
 
 const Index = () => {
   return (
-    <>
+    <div className="col-span-1">
       <AIModuleIndex />
       <FPVIndex />
-    </>
+    </div>
   );
 };
 

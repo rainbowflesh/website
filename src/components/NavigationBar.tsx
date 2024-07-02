@@ -43,7 +43,6 @@ export const NavigationBar = () => {
                       {t("string.smart_fpv")}
                     </Link>
                     <ul>
-                      {" "}
                       <li>
                         <Link className="text-lg" to={urls.fpv_10inch}>
                           {t("product.fpv_10inch")}
@@ -117,13 +116,13 @@ export const NavigationBar = () => {
               >
                 {t("string.products")}
               </Dropdown.Item>
-              {/* <Dropdown.Item
+              <Dropdown.Item
                 onClick={() => {
-                  navigate("services");
+                  navigate("contact");
                 }}
               >
-                {t("string.services")}
-              </Dropdown.Item> */}
+                {t("string.contact")}
+              </Dropdown.Item>
             </Dropdown.Menu>
           </div>
         </Dropdown>

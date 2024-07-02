@@ -10,10 +10,10 @@ export const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <Hero className="dot-background dark:dot-background-dark h-dvh">
+    <Hero className="dot-background dark:dot-background-dark max-h-screen">
       <Analytics />
       <Hero.Content className="text-center flex flex-col sm:flex-row">
-        <div className="rounded-box w-full sm:w-2/3 max-w-10/12 snap-center place-items-center">
+        <div className="rounded-box m-auto w-full sm:w-2/3 max-w-10/12">
           <Carousel
             autoplay
             autoplayInterval={5000}
@@ -26,10 +26,11 @@ export const Home = () => {
               prevButtonText: "❮",
               pagingDotsClassName: "mr-1 ml-1 backdrop-blur-lg",
             }}
-            className="rounded-box  h-128"
+            className="rounded-box h-128 overflow-hidden"
           >
             <img className="bg-cover" src="/images/ai_module/lokon1/cover.jpg" />
-            <img className="bg-center bg-cover m-auto bg-premium-color" src="/images/fpv/10inch/cover.png" />
+            <img className="bg-cover bg-gray-100 dark:bg-base-200" src="/images/ai_module/lokon1/smart_cam_sys.png" />
+            <img className="bg-center bg-cover bg-premium-color" src="/images/fpv/10inch/cover.png" />
           </Carousel>
         </div>
         <div className="w-full sm:w-1/3">

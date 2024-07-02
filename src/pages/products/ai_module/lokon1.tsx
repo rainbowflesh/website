@@ -36,7 +36,7 @@ const VideoPlayerModal = () => {
     <div>
       <img
         onClick={handleOpenModal}
-        src="/images/ai_module/lokon1/fpv_strike_demo.gif"
+        src="/images/ai_module/lokon1/demo/fpv_strike_demo.gif"
         alt="Fpv Strike Demo"
         className="product-detail-img-p2 rounded-lg bg-gray-100 dark:bg-base-200 m-auto transition-transform duration-300 transform hover:scale-130"
       />
@@ -117,7 +117,7 @@ export const AIModuleLokon1 = () => {
             className="product-detail-img-p1 rounded-lg bg-gray-100 dark:bg-base-200"
           />
           <img
-            src="/images/ai_module/lokon1/InfraCamera.png"
+            src="/images/ai_module/lokon1/smart_cam_sys.png"
             className="product-detail-img-p1 bg-gray-100 dark:bg-base-200 rounded-lg shadow-lg"
           />
           <VideoPlayerModal />
