@@ -56,7 +56,12 @@
     "weight": "Weight",
     "whatsapp": "WhatsApp",
     "company_profile": "COMPANY PROFILE",
-    "work_method": "Working Method"
+    "work_method": "Working Method",
+    "download": "Download",
+    "name": "Name",
+    "type": "Type",
+    "category": "Category",
+    "support_center": "Support center"
   },
   "text": {
     "404": "Into the Void",
@@ -78,7 +83,9 @@
     "company_profile_4": "We are committed to advancing the frontiers of drone technology, particularly in ensuring reliable positioning and navigation in GPS-denied environments. Our core strengths lie in our unique algorithms, flight control systems, and advanced algorithm development. Through continuous technological innovation and optimization, our drone products lead the industry in performance and reliability, capable of operating in various complex environments.",
     "company_profile_5": "We uphold the principles of customer-first and technology leadership, providing high-quality drone products and professional technical support to our clients. Our goal is to become the global leader in the special-purpose drone industry.",
     "company_profile_6": "Choose ZEEWIND, choose the future of drone technology.",
-    "learnmore": "Learn more about AI module!"
+    "learnmore": "Learn more about AI module!",
+    "email_us": "Email us directly",
+    "support_center": "Download product brochures and manuals."
   },
   "product": {
     "ai_module": {

@@ -12,18 +12,19 @@ interface TableRow {
 
 const TableAction = (link: string) => {
   return (
-    <Button
-      variant="outline"
-      color="primary"
-      animation={true}
-      startIcon={
+    <Link href={link} target="_blank">
+      <Button
+        // variant="outline"
+        color="primary"
+        animation={true}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-4"
+          className="size-6"
         >
           <path
             strokeLinecap="round"
@@ -31,56 +32,48 @@ const TableAction = (link: string) => {
             d="m9 13.5 3 3m0 0 3-3m-3 3v-6m1.06-4.19-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"
           />
         </svg>
-      }
-    >
-      <Link href={link} target="_blank">
-        Download
-      </Link>
-    </Button>
+      </Button>
+    </Link>
   );
 };
-
 export const Support: React.FC = () => {
   const { t } = useTranslation();
   const TableBody = [
     {
-      id: 1,
       category: "AI Module",
       name: "LoKon Gen1",
-      type: t("string.user_manual"),
+      type: "User Manual",
       action: TableAction("downloads/documents/ai_module_lokon1_readme.pdf"),
     },
     {
-      id: 2,
       category: "AI Module",
       name: "LoKon Gen1",
       type: "用户手册",
       action: TableAction("downloads/documents/ai_module_lokon1_readme_zh.pdf"),
     },
     {
-      id: 3,
       category: "AI Module",
       name: "LoKon Gen1",
       type: "Brochure",
       action: TableAction("downloads/documents/ai_module_lokon1_brochure.pdf"),
     },
     {
-      id: 4,
       category: "Smart FPV",
       name: "10 Inch",
       type: "Brochure",
       action: TableAction("downloads/documents/smart_fpv_10_inch.pdf"),
     },
   ];
-
-  const [data] = useState<TableRow[]>(TableBody);
-
+  const TableBodyWithIds = TableBody.map((item, index) => ({
+    ...item,
+    id: index + 1,
+  }));
+  const [data] = useState<TableRow[]>(TableBodyWithIds);
   const [filteredData, setFilteredData] = useState<TableRow[]>(data);
   const [sortConfig, setSortConfig] = useState<{ key: keyof TableRow; direction: "asc" | "desc" | null }>({
     key: "id",
     direction: null,
   });
-
   const handleSort = (key: keyof TableRow) => {
     let direction: "asc" | "desc" = "asc";
     if (sortConfig && sortConfig.key === key && sortConfig.direction === "asc") {
@@ -99,8 +92,8 @@ export const Support: React.FC = () => {
     <Hero className="dot-background dark:dot-background-dark flex-1">
       <Hero.Content className="text-center">
         <div className="max-w-xl bg-slate-50 dark:bg-base-200 rounded-box p-4">
-          <h1 className="text-5xl font-bold">Support center</h1>
-          <p className="py-6">Download product brochures and manuals.</p>
+          <h1 className="text-5xl font-bold">{t("string.support_center")}</h1>
+          <p className="py-6">{t("text.support_center")}</p>
           <Card side="lg" className="bg-slate-100 dark:bg-base-300 rounded-box ">
             <Card.Body>
               <Table>
@@ -108,10 +101,10 @@ export const Support: React.FC = () => {
                   <Tooltip message={"click to sort"}>
                     <span onClick={() => handleSort("id")}>#</span>
                   </Tooltip>
-                  <span onClick={() => handleSort("category")}>Category</span>
-                  <span onClick={() => handleSort("name")}>Name</span>
-                  <span onClick={() => handleSort("type")}>Type</span>
-                  <span>Action</span>
+                  <span onClick={() => handleSort("category")}>{t("string.category")}</span>
+                  <span onClick={() => handleSort("name")}>{t("string.name")}</span>
+                  <span onClick={() => handleSort("type")}>{t("string.type")}</span>
+                  <span>{t("string.download")}</span>
                 </Table.Head>
                 <Table.Body>
                   {filteredData.map((row) => (
@@ -129,7 +122,7 @@ export const Support: React.FC = () => {
           </Card>
           <div>
             <Divider className="dark:text-white ">{t("string.or")}</Divider>
-            <h1 className="text-4xl font-bold mt-2 mb-2">Email us directly</h1>
+            <h1 className="text-4xl font-bold mt-2 mb-2">{t("text.email_us")}</h1>
             <a className="text-gray-400 mb-2" href={"mailto:contact@zeewind-uav.com"}>
               <span className="text-black dark:text-white">Tech support: </span>
               contact@zeewind-uav.com

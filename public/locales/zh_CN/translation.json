@@ -13,7 +13,6 @@
     "contact": "联系方式",
     "country": "国家",
     "demo_video": "演示视频",
-    "dimensions": "Dimension",
     "email": "电子邮箱",
     "first_name": "名",
     "fpv_10inch": "10\" FPV Drone",
@@ -54,22 +53,38 @@
     "wa_cam": "广角镜头",
     "wechat": "微信",
     "weight": "重量",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "work_method": "工作方式",
+    "category": "类别",
+    "company_profile": "公司简介",
+    "download": "下载",
+    "name": "姓名",
+    "support_center": "支持中心",
+    "type": "类型"
   },
   "text": {
     "404": "步入虚空",
-    "company_introduce": "我们专注于无人机AI制导系统的研发和生产。我们致力于提供先进的算法支持和解决方案。除此之外, ZEEWIND 还提供行业垂直领域咨询服务，帮助客户了解并满足其专业需求。",
+    "company_introduce": "我们专注于无人机 AI 制导系统的研发和生产. 我们致力于提供先进的算法支持和解决方案. 除此之外, ZEEWIND 还提供行业垂直领域咨询服务, 帮助客户了解并满足其专业需求.",
     "company_name_full": "ZEEWIND Inc,.",
     "company_name_short": "ZEEWIND",
     "company_slogan": "先进智能无人机系统",
-    "contact_us_mention": "由于邮件保护，若三个工作日内未收到回复，请您直接与我们联系.",
-    "copyright": "© 2024 ZEEWIND Inc,. 本网站中出现的其徽标、品牌、产品、服务和流程名称是 ZEEWIND Inc,. 或其附属公司的商标或服务标志。\\n出现的所有其他品牌、产品、服务和流程名称均为其各自所有者的商标。\\n除非本文明确授予，本文包含的任何内容均不得解释为以暗示、禁止反言或其他方式授予 ZEEWIND Inc,. 或任何第三方的任何专利、版权、商标或其他知识产权的任何许可或权利。\\n本网站中的所有信息仅供一般参考，如有更改，恕不另行通知。",
+    "contact_us_mention": "由于邮件保护, 若三个工作日内未收到回复, 请您直接与我们联系.",
+    "copyright": "© 2024 ZEEWIND Inc,. 本网站中出现的其徽标、品牌、产品、服务和流程名称是 ZEEWIND Inc,. 或其附属公司的商标或服务标志. \\n出现的所有其他品牌、产品、服务和流程名称均为其各自所有者的商标. \\n除非本文明确授予, 本文包含的任何内容均不得解释为以暗示、禁止反言或其他方式授予 ZEEWIND Inc,. 或任何第三方的任何专利、版权、商标或其他知识产权的任何许可或权利. \\n本网站中的所有信息仅供一般参考, 如有更改, 恕不另行通知. ",
     "greeting": "你好, 我们是 ZEEWIND",
     "tel_value": "+86 15311257582",
     "test": "test placeholder",
     "tos": "服务条款",
     "ur_msg_placeholder": "告诉我们您想了解的任何内容",
-    "return": "回到未来"
+    "return": "回到未来",
+    "company_profile_1": "我们是 ZEEWIND, 成立于 2021 年.",
+    "company_profile_2": "ZEEWIND 是一家集设计、研究和制造于一体，专注于特种无人机研发的高科技公司。在过去的 3 年中，ZEEWIND 迅速成长，现有员工总数达 30 人，其中超过 20 人专注于研发工作。",
+    "company_profile_3": "我们致力于推动无人机技术的前沿发展，特别是在拒止环境下确保无人机定位和导航的可靠性。我们的核心优势在于独特的算法、飞行控制系统以及先进的算法开发。通过持续的技术创新和优化，我们的无人机产品在性能和可靠性方面处于行业领先地位，能够满足各种复杂环境下的操作需求。",
+    "company_profile_5": "我们秉持客户至上和技术领先的原则，为客户提供高质量的无人机产品和专业的技术支持。我们的目标是成为特种无人机行业的全球领导者。",
+    "company_profile_4": "通过持续的技术创新和优化，我们的无人机产品在性能和可靠性方面处于行业领先地位，能够满足各种复杂环境下的操作需求。",
+    "company_profile_6": "选择 ZEEWIND，选择未来的无人机技术。",
+    "email_us": "直接给我们发电子邮件",
+    "learnmore": "了解更多 AI 模块的信息！",
+    "support_center": "下载产品手册和宣传册。"
   },
   "product": {
     "ai_module": {
@@ -80,18 +95,23 @@
         "ai_size": "30mm*30mm*10mm",
         "ai_tdp": "5w",
         "ai_weight": "20g",
-        "ir_cam_description": "辅助夜间、复杂背景环境下的⼈员、⻋辆识别，减弱烟雾⼲扰.",
+        "ir_cam_description": "辅助夜间、复杂背景环境下的⼈员、⻋辆识别, 减弱烟雾⼲扰.",
         "ir_cam_specs": "分辨率: 256*192 像素 | 视场角: 60°",
         "name": "Lokon Gen 1",
         "tracking_range_specs": "人员: 200m | 车辆: 800m",
         "wa_cam_description": "由于制导相机 FOV 较⼩, 增加⼴⾓摄像头扩展视场便于⼈⼯操控⻜⾏.",
         "wa_cam_specs": "分辨率: 1280*960 px | DFOV: 150°",
-        "ai_cam_description": "手动控制辅助和自动引导模块。"
+        "ai_cam_description": "手动控制辅助和自动引导模块. ",
+        "introduce": "本智能跟踪模组具有 FPV 末端图像制导的功能，在遥控器⼿动锁定⽬标后 具备⾃动引导 FPV ⽆⼈机追踪⽬标直⾄碰撞的功能。该智能模组包含处理单元、 相机(替换原 FPV 系统⾃有相机)，需接入原有 FPV ⽆⼈机系统与⻜控、图传连接。"
       }
     },
     "fpv": {
-      "10inch": {},
-      "7inch": {}
+      "10inch": {
+        "name": "10 寸 FPV"
+      },
+      "7inch": {
+        "name": "7寸 FPV"
+      }
     }
   }
 }
