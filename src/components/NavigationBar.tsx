@@ -23,8 +23,8 @@ export const NavigationBar = () => {
   };
 
   return (
-    <Navbar className="line-background px-2 font-sans bg-base-300 rounded-box border-2 mx-auto max-w-screen-xl sm:px-6 lg:px-8 h-4">
-      <Navbar.Start className="flex flex-wrap md:flex-wrap-reverse truncate -ml-4">
+    <Navbar className="line-background font-sans bg-base-300 rounded-box border-2 mx-auto max-w-screen-xl h-4">
+      <Navbar.Start className="flex flex-wrap md:flex-wrap-reverse truncate">
         <Logo />
       </Navbar.Start>
       <Navbar.Center className="flex flex-wrap md:flex-wrap-reverse h-16 items-center justify-between z-50">
