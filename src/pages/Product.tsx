@@ -98,8 +98,14 @@ const AIModuleIndex = () => {
 const Index = () => {
   return (
     <div className="col-span-1">
-      <AIModuleIndex />
-      <FPVIndex />
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1 sm:gap-48 md:gap-0 lg:gap-0">
+        <div className="overflow-auto">
+          <AIModuleIndex />
+        </div>
+        <div className="">
+          <FPVIndex />
+        </div>
+      </div>
     </div>
   );
 };
