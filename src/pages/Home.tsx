@@ -33,7 +33,7 @@ export const Home = () => {
             <img className="bg-center bg-cover bg-premium-color" src="/images/fpv/10inch/cover.png" />
           </Carousel>
         </div>
-        <div className="w-full sm:w-1/3">
+        <div className="w-full sm:w-1/3 max-w-4/5 md:w-1/2 lg:max-w-2/5">
           <article className="text-wrap">
             <h1 className="text-5xl font-bold">{t("text.greeting")}</h1>
             <p
