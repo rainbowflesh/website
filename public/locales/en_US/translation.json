@@ -104,6 +104,9 @@
         "wa_cam_specs": "Resolution: 1280*960 px | DFOV: 150°",
         "ai_cam_description": "Manual control assistance and automatic guidance module.",
         "introduce": "This intelligent tracking module features FPV terminal image guidance, enabling automatic FPV drone tracking of targets until collision after manually locking the target with the remote controller. The smart module includes a processing unit and a camera (replacing the original FPV system's own camera), requiring integration into the existing FPV drone system with flight control and video transmission connections."
+      },
+      "apel2k": {
+        "name": "APeL-2000"
       }
     },
     "fpv": {

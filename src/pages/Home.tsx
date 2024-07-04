@@ -46,7 +46,7 @@ export const Home = () => {
           <div className="grid grid-flow-col auto-cols-auto">
             <div className="size-1"></div>
             <Button className="">
-              <Link to={urls.learnmore}>{t("string.learn_more")}</Link>
+              <Link to={urls.ai_module_lokon1}>{t("string.learn_more")}</Link>
             </Button>
             <div className="size-1"></div>
             <Button color="neutral">
