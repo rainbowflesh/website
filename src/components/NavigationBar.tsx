@@ -39,8 +39,8 @@ export const NavigationBar = () => {
                 <summary>{t("string.product")}</summary>
                 <ul id="navbar-dropdown1" className="bg-slate-50 dark:bg-base-300 items-start min-w-max">
                   <li>
-                    <Link className="text-stone-500 dark:text-stone-400" to={urls.product_fpv}>
-                      {t("string.smart_fpv")}
+                    <Link className="text-stone-500 dark:text-stone-400" to={urls.product_uav}>
+                      {t("string.smart_uav")}
                     </Link>
                     <ul>
                       <li>
