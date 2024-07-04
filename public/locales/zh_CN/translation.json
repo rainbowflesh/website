@@ -60,7 +60,25 @@
     "download": "下载",
     "name": "姓名",
     "support_center": "支持中心",
-    "type": "类型"
+    "type": "类型",
+    "terminal_guidance": "末端制导",
+    "smart_uav": "智能 UAV",
+    "product_name": "产品名",
+    "positioning_module": "定位模块",
+    "positioning_frequency": "定位频率",
+    "positioning_accuracy": "定位精度",
+    "performance_advantages": "技术优势",
+    "operating_temperature": "工作温度",
+    "operating_altitude": "工作高度",
+    "navigation_pod": "导航吊舱",
+    "laser_ranging": "激光测距",
+    "language": "语言",
+    "io_interfaces": "IO 接口",
+    "installation_weight": "安装重量",
+    "installation_size": "安装大小",
+    "feature_introduce": "功能介绍",
+    "dimensions": "尺寸",
+    "application_scenario": "使用场景"
   },
   "text": {
     "404": "步入虚空",
@@ -103,6 +121,21 @@
         "wa_cam_specs": "分辨率: 1280*960 px | DFOV: 150°",
         "ai_cam_description": "手动控制辅助和自动引导模块. ",
         "introduce": "本智能跟踪模组具有 FPV 末端图像制导的功能，在遥控器⼿动锁定⽬标后 具备⾃动引导 FPV ⽆⼈机追踪⽬标直⾄碰撞的功能。该智能模组包含处理单元、 相机(替换原 FPV 系统⾃有相机)，需接入原有 FPV ⽆⼈机系统与⻜控、图传连接。"
+      },
+      "apel2k": {
+        "tdp_specs": "15w",
+        "positioning_frequency_specs": "1 Hz",
+        "positioning_accuracy_specs": "高度*5%（红外）/高度*3%（可见光）",
+        "performance_advantages": "全天候支持; 轻量化设计, 使用 CNC 一体式成型铝合金外壳; 地面适应性强 (适应农田、山区、草地等场景).",
+        "application_scenario": "产品主要应用于高空无人机、巡飞弹等装备, 实现拒止环境下的高空、大范围飞行任务常态化执行.",
+        "installation_size_specs": "传感器模块: 60*60*60mm; 主控模块: 100*60*25mm",
+        "installation_weight_specs": "传感器模块: 200g; 主控模块: 110g",
+        "introduce": "ZW APEL-2000 为高空图像定位模组, 集成可见光相机/红外相机、激光测距机, 在拒止环境下输出 WGS84 坐标系的定位数据, 有效解决 GNSS 干扰下的无人机飞行定位问题.",
+        "io_interfaces_specs": "Ethernet, RS232",
+        "laser_ranging_specs": "2km",
+        "name": "APeL-2000",
+        "operating_altitude_specs": "300-2000m",
+        "operating_temperature_specs": "-40℃ to 55℃"
       }
     },
     "fpv": {
@@ -113,5 +146,6 @@
         "name": "7寸 FPV"
       }
     }
-  }
+  },
+  "string_user_manual": "用户手册"
 }

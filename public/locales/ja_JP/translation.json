@@ -61,7 +61,24 @@
     "download": "ダウンロード",
     "name": "名前",
     "support_center": "サポートセンター",
-    "type": "タイプ"
+    "type": "タイプ",
+    "application_scenario": "アプリケーションシナリオ",
+    "feature_introduce": "機能紹介",
+    "installation_size": "設置サイズ",
+    "installation_weight": "設置重量",
+    "io_interfaces": "IOインターフェース",
+    "language": "言語",
+    "laser_ranging": "レーザー測距",
+    "navigation_pod": "ナビゲーションポッド",
+    "operating_altitude": "動作高度",
+    "operating_temperature": "動作温度",
+    "performance_advantages": "パフォーマンス上の利点",
+    "positioning_accuracy": "位置決め精度",
+    "positioning_frequency": "位置決め周波数",
+    "positioning_module": "位置決めモジュール",
+    "product_name": "プロカット名",
+    "smart_uav": "スマートUAV",
+    "terminal_guidance": "ターミナル案内"
   },
   "text": {
     "404": "虚空へ",
@@ -104,6 +121,21 @@
         "wa_cam_description": "誘導カメラのFOVは小さいため、広角カメラを増やして視野を拡大すると、手動飛行制御が容易になります。",
         "wa_cam_specs": "解像度: 1280*960 ピクセル | DFOV: 150°",
         "introduce": "このインテリジェントなトラッキングモジュールは、FPV端末画像ガイダンスを特徴とし、リモートコントローラーでターゲットを手動でロックした後、目標の自動追跡を衝突するまでFPVドローンが行います。スマートモジュールには処理ユニットとカメラが含まれており（元のFPVシステムのカメラを置き換え）、フライトコントロールとビデオ伝送の接続が必要です。これらは既存のFPVドローンシステムに統合されます。"
+      },
+      "apel2k": {
+        "tdp_specs": "15w",
+        "positioning_frequency_specs": "1 Hz",
+        "positioning_accuracy_specs": "高さ * 5% (赤外線) / 高さ * 3% (可視光)",
+        "performance_advantages": "終日サポート。\n軽量設計。 \nCNC一体成型アルミニウムシェル。\n強力な空対地視覚適応性 (野原、山岳地帯、草原、その他のシナリオに適しています)。",
+        "application_scenario": "これらの製品は、主に高高度 UAV、巡航ミサイル、その他の機器に使用され、拒否環境における高高度および大規模な飛行ミッションの正常化を実現します。",
+        "installation_size_specs": "センサーモジュール: 60*60*60mm;\nメインコントロールユニット: 100*60*25mm",
+        "installation_weight_specs": "センサーモジュール: 200g;\nメインコントロールユニット: 110g",
+        "introduce": "ZW APeL-2000は、可視光カメラ/赤外線カメラとレーザー距離計を統合した高高度画像測位モジュールです。\n拒否された環境で WGS84 座標測位データを出力し、GNSS 干渉下での UAV 飛行測位の問題を効果的に解決します。",
+        "io_interfaces_specs": "Ethernet, RS232",
+        "laser_ranging_specs": "2km",
+        "name": "APeL-2000",
+        "operating_altitude_specs": "300-2000m",
+        "operating_temperature_specs": "-40℃ to 55℃"
       }
     },
     "fpv": {
@@ -114,5 +146,6 @@
         "name": "7インチFPV"
       }
     }
-  }
+  },
+  "string_user_manual": "ユーザーマニュアル"
 }

@@ -44,7 +44,7 @@ const FPVIndex: React.FC = () => {
   return (
     <div className="dot-background dark:dot-background-dark p-8 flex-1 rounded-box">
       <h1 className="text-5xl font-bold m-auto text-center mb-4">{t("string.uav")}</h1>
-      <div className="bg-gray-200 dark:bg-black p-8 mx-auto max-w-2xl lg:max-w-none mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+      <div className="bg-gray-100 dark:bg-black p-8 mx-auto max-w-2xl lg:max-w-none mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
         <ProductCard
           img1="/images/fpv/10inch/digital_preview.png"
           img2="/images/fpv/10inch/analog_preview.png"

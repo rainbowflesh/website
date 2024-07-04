@@ -76,7 +76,9 @@
     "wechat": "WeChat",
     "weight": "Weight",
     "whatsapp": "WhatsApp",
-    "work_method": "Working Method"
+    "work_method": "Working Method",
+    "language": "Language",
+    "product_name": "Procut Name"
   },
   "text": {
     "404": "Into the Void",
@@ -124,13 +126,13 @@
         "application_scenario": "The products are mainly used in high-altitude UAVs, cruise missiles and other equipment to achieve the normalization of high-altitude and large-scale flight missions in a denial environment.",
         "installation_size_specs": "Sensor Module: 60*60*60mm; Main Control Unit: 100*60*25mm",
         "installation_weight_specs": "Sensor Module: 200g; Main Control Unit: 110g",
-        "introduce": "A high-altitude image positioning module, integrating visible light camera / infrared camera, and laser rangefinder. It outputs WGS84 coordinate positioning data in denied environments, effectively solving UAV flight positioning problems under GNSS interference.",
+        "introduce": "ZW APeL-2000 is a high-altitude image positioning module, integrating visible light camera / infrared camera, and laser rangefinder. It outputs WGS84 coordinate positioning data in denied environments, effectively solving UAV flight positioning problems under GNSS interference.",
         "io_interfaces_specs": "Ethernet, RS232",
         "laser_ranging_specs": "2km",
         "name": "APeL-2000",
         "operating_altitude_specs": "300-2000m",
         "operating_temperature_specs": "-40℃ to 55℃",
-        "performance_advantages": "All day support; Lightweight; Robust.",
+        "performance_advantages": "All day support; Lightweight design; CNC one-piece molding aluminum shell; Strong Air-to-Ground vision adaptability (suitable for fields, mountainous areas, grasslands, and other scenarios).",
         "positioning_accuracy_specs": "Height * 5% (infrared) / Height * 3% (visible light)",
         "positioning_frequency_specs": "1 Hz",
         "tdp_specs": "15w"
@@ -144,5 +146,6 @@
         "name": "7 Inch FPV"
       }
     }
-  }
+  },
+  "string_user_manual": "User Manual"
 }

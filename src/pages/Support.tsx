@@ -1,23 +1,21 @@
 import React, { useState } from "react";
 import { Button, Card, Divider, Hero, Link, Table, Tooltip } from "react-daisyui";
 import { useTranslation } from "react-i18next";
+import TableBody from "../../public/downloads/index.json";
 
 interface TableRow {
   id: number;
   category: string;
-  name: string;
+  product_name: string;
   type: string;
-  action: React.ReactNode;
+  lang: string;
+  url: string;
 }
 
 const TableAction = (link: string) => {
   return (
     <Link href={link} target="_blank">
-      <Button
-        // variant="outline"
-        color="primary"
-        animation={true}
-      >
+      <Button variant="outline" color="primary" animation={true}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -36,35 +34,10 @@ const TableAction = (link: string) => {
     </Link>
   );
 };
+
 export const Support: React.FC = () => {
   const { t } = useTranslation();
-  const TableBody = [
-    {
-      category: "AI Module",
-      name: "LoKon Gen1",
-      type: "User Manual",
-      action: TableAction("downloads/documents/ai_module_lokon1_readme.pdf"),
-    },
-    {
-      category: "AI Module",
-      name: "LoKon Gen1",
-      type: "用户手册",
-      action: TableAction("downloads/documents/ai_module_lokon1_readme_zh.pdf"),
-    },
-    {
-      category: "AI Module",
-      name: "LoKon Gen1",
-      type: "Brochure",
-      action: TableAction("downloads/documents/ai_module_lokon1_brochure.pdf"),
-    },
-    {
-      category: "Smart FPV",
-      name: "10 Inch",
-      type: "Brochure",
-      action: TableAction("downloads/documents/smart_fpv_10_inch.pdf"),
-    },
-  ];
-  const TableBodyWithIds = TableBody.map((item, index) => ({
+  const TableBodyWithIds: any = TableBody.map((item, index) => ({
     ...item,
     id: index + 1,
   }));
@@ -87,6 +60,20 @@ export const Support: React.FC = () => {
     });
     setFilteredData(sortedData);
   };
+  function GetLanguageName(countryCode: string) {
+    switch (countryCode) {
+      case "en_US":
+        return "English";
+      case "zh_cn":
+        return "中文";
+      case "ru_RU":
+        return "Русский";
+      case "ja_JP":
+        return "日本語";
+      default:
+        return countryCode;
+    }
+  }
 
   return (
     <Hero className="dot-background dark:dot-background-dark flex-1">
@@ -96,13 +83,14 @@ export const Support: React.FC = () => {
           <p className="py-6">{t("text.support_center")}</p>
           <Card side="lg" className="bg-slate-100 dark:bg-base-300 rounded-box ">
             <Card.Body>
-              <Table>
+              <Table className="min-w-128">
                 <Table.Head>
                   <Tooltip message={"click to sort"}>
                     <span onClick={() => handleSort("id")}>#</span>
                   </Tooltip>
                   <span onClick={() => handleSort("category")}>{t("string.category")}</span>
-                  <span onClick={() => handleSort("name")}>{t("string.name")}</span>
+                  <span onClick={() => handleSort("product_name")}>{t("string.product_name")}</span>
+                  <span onClick={() => handleSort("lang")}>{t("string.language")}</span>
                   <span onClick={() => handleSort("type")}>{t("string.type")}</span>
                   <span>{t("string.download")}</span>
                 </Table.Head>
@@ -110,10 +98,11 @@ export const Support: React.FC = () => {
                   {filteredData.map((row) => (
                     <Table.Row key={row.id}>
                       <span>{row.id}</span>
-                      <span>{row.category}</span>
-                      <span>{row.name}</span>
-                      <span>{row.type}</span>
-                      <span>{row.action}</span>
+                      <span>{t(row.category)}</span>
+                      <span>{t(row.product_name)}</span>
+                      <span>{GetLanguageName(row.lang)}</span>
+                      <span>{t(row.type)}</span>
+                      <span>{TableAction(row.url)}</span>
                     </Table.Row>
                   ))}
                 </Table.Body>
@@ -124,7 +113,7 @@ export const Support: React.FC = () => {
             <Divider className="dark:text-white ">{t("string.or")}</Divider>
             <h1 className="text-4xl font-bold mt-2 mb-2">{t("text.email_us")}</h1>
             <a className="text-gray-400 mb-2" href={"mailto:contact@zeewind-uav.com"}>
-              <span className="text-black dark:text-white">Tech support: </span>
+              <span className="text-black dark:text-white">{t("string.tech_support")}: </span>
               contact@zeewind-uav.com
             </a>
           </div>
