@@ -65,6 +65,11 @@ export const NavigationBar = () => {
                           {t("product.ai_module.lokon1.name")}
                         </Link>
                       </li>
+                      <li>
+                        <Link className="text-lg" to={urls.ai_module_apel2k}>
+                          {t("product.ai_module.apel2k.name")}
+                        </Link>
+                      </li>
                     </ul>
                   </li>
                 </ul>

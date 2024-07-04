@@ -76,6 +76,13 @@ const AIModuleIndex = () => {
             productName="product.ai_module.lokon1.name"
             tKey="product.ai_module.lokon1.name"
           />
+          <ProductCard
+            imageUrl1="/images/ai_module/apel2k/cover.png"
+            imageUrl2="/images/ai_module/apel2k/cover.png"
+            productUrl={urls.ai_module_apel2k}
+            productName="product.ai_module.apel2k.name"
+            tKey="product.ai_module.apel2k.name"
+          />
         </div>
       </div>
     </div>

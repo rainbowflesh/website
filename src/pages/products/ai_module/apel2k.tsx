@@ -37,7 +37,7 @@ const VideoPlayerModal = () => {
     <div>
       <img
         onClick={handleOpenModal}
-        src="/images/ai_module/lokon1/demo/fpv_strike_demo.gif"
+        src="/images/ai_module/apel2k/apel2k.gif"
         alt={t("string.fpv_assault_demo")}
         className="product-detail-img-p2 rounded-lg bg-gray-100 dark:bg-base-200 m-auto transition-transform duration-300 transform hover:scale-130"
       />
@@ -74,17 +74,19 @@ const VideoPlayerModal = () => {
 export const AIModuleApel2K = () => {
   const { t } = useTranslation();
   const features = [
-    { name: t("string.ai_cam"), description: t("product.ai_module.lokon1.ai_cam_specs") },
-    { name: t("string.work_method"), description: t("product.ai_module.lokon1.ai_cam_description") },
-    { name: t("string.wa_cam"), description: t("product.ai_module.lokon1.wa_cam_specs") },
-    { name: t("string.work_method"), description: t("product.ai_module.lokon1.wa_cam_description") },
-    { name: t("string.ir_cam"), description: t("product.ai_module.lokon1.ir_cam_specs") },
-    { name: t("string.work_method"), description: t("product.ai_module.lokon1.ir_cam_description") },
-    { name: t("string.accuracy"), description: t("product.ai_module.lokon1.ai_accuracy") },
-    { name: t("string.tdp"), description: t("product.ai_module.lokon1.ai_tdp") },
-    { name: t("string.size"), description: t("product.ai_module.lokon1.ai_size") },
-    { name: t("string.weight"), description: t("product.ai_module.lokon1.ai_weight") },
-    { name: t("string.power_source"), description: t("product.ai_module.lokon1.ai_power_source") },
+    { name: t("string.performance_advantages"), description: t("product.ai_module.apel2k.performance_advantages") },
+    { name: t("string.operating_altitude"), description: t("product.ai_module.apel2k.operating_altitude_specs") },
+    { name: t("string.positioning_accuracy"), description: t("product.ai_module.apel2k.positioning_accuracy_specs") },
+    {
+      name: t("string.positioning_frequency"),
+      description: t("product.ai_module.apel2k.positioning_frequency_specs"),
+    },
+    { name: t("string.laser_ranging"), description: t("product.ai_module.apel2k.laser_ranging_specs") },
+    { name: t("string.io_interfaces"), description: t("product.ai_module.apel2k.io_interfaces_specs") },
+    { name: t("string.installation_size"), description: t("product.ai_module.apel2k.installation_size_specs") },
+    { name: t("string.installation_weight"), description: t("product.ai_module.apel2k.installation_weight_specs") },
+    { name: t("string.tdp"), description: t("product.ai_module.apel2k.tdp_specs") },
+    { name: t("string.operating_temperature"), description: t("product.ai_module.apel2k.operating_temperature_specs") },
   ];
   return (
     <div className="dot-background dark:dot-background-dark">
@@ -95,7 +97,9 @@ export const AIModuleApel2K = () => {
               {t("string.tech_specs")}
             </h2>
             <p className="pt-4 pb-4 text-lg text-gray-500 dark:text-gray-400 ">{t("product.ai_module.apel2k.name")}</p>
-            <p>{t("product.ai_module.lokon1.introduce")}</p>
+            <p>{t("product.ai_module.apel2k.introduce")}</p>
+            <br />
+            <p>{t("product.ai_module.apel2k.application_scenario")}</p>
             <dl className="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
               {features.map((feature) => (
                 <div key={feature.name} className="border-t border-gray-200 pt-2">
@@ -108,14 +112,13 @@ export const AIModuleApel2K = () => {
         </div>
         <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:gap-8 relative overflow-hidden">
           <img
-            src="/images/ai_module/lokon1/cover.jpg"
+            src="/images/ai_module/apel2k/cover.png"
             className="product-detail-img-p1 rounded-lg bg-gray-100 dark:bg-base-200"
           />
           <img
-            src="/images/ai_module/lokon1/smart_cam_sys.png"
-            className="product-detail-img-p1 bg-gray-100 dark:bg-base-200 rounded-lg shadow-lg"
+            src="/images/ai_module/apel2k/apel2k.gif"
+            className="product-detail-img-p1 bg-gray-100 dark:bg-base-200 rounded-lg shadow-lg m-auto"
           />
-          <VideoPlayerModal />
         </div>
       </div>
     </div>
