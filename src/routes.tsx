@@ -10,7 +10,6 @@ import { Void } from "@pages/Void";
 import { AIModuleApel2K } from "@pages/products/ai_module/apel2k";
 import { AIModuleIrca170 } from "@pages/products/ai_module/irca170";
 import { AIModuleLokon1 } from "@pages/products/ai_module/lokon1";
-import { Fpv10Inch, Fpv7Inch } from "@pages/products/fpv/index";
 import { Index, FPVIndex, AIModuleIndex } from "@pages/Product";
 import ProductIndex from "./index.json";
 
@@ -42,8 +41,6 @@ const routes = [
   { path: ProductPages.ai_module_apel2k.route, element: <AIModuleApel2K /> },
   { path: ProductPages.ai_module_irca170.route, element: <AIModuleIrca170 /> },
   { path: ProductPages.ai_module_lokon1.route, element: <AIModuleLokon1 /> },
-  { path: ProductPages.fpv_10inch.route, element: <Fpv10Inch /> },
-  { path: ProductPages.fpv_7inch.route, element: <Fpv7Inch /> },
 ];
 
 const PageRoutes = () => {

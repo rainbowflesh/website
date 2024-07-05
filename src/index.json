@@ -29,24 +29,6 @@
         "zh_cn": "downloads/AI模块_irca170_用户手册.pdf",
         "en_US": "downloads/ai_module_irca170_manual.pdf"
       }
-    },
-    "fpv_10inch": {
-      "name": "product.fpv.10inch.name",
-      "category": "string.fpv",
-      "route": "/product/fpv/10inch",
-      "download_type": "string_user_manual",
-      "download_url": {
-        "zh_cn": "downloads/fpv_10inch_用户手册.pdf"
-      }
-    },
-    "fpv_7inch": {
-      "name": "product.fpv.7inch.name",
-      "category": "string.fpv",
-      "route": "/product/fpv/7inch",
-      "download_type": "string_user_manual",
-      "download_url": {
-        "zh_cn": "downloads/fpv_7inch_用户手册.pdf"
-      }
     }
   }
 ]
