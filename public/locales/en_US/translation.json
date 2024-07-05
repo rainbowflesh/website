@@ -37,6 +37,7 @@
     "legal": "Legal",
     "name": "Name",
     "navigation_pod": "Navigation Pod",
+    "tracking_pod": "Tracking Pod",
     "operating_altitude": "Operating Altitude",
     "operating_temperature": "Operating Temperature",
     "optional": "Optional",
@@ -136,6 +137,11 @@
         "positioning_accuracy_specs": "Height * 5% (infrared) / Height * 3% (visible light)",
         "positioning_frequency_specs": "1 Hz",
         "tdp_specs": "15w"
+      },
+      "irca170": {
+        "name": "IRCa170",
+        "introduce": "ZW-IRCa-170 dual-spectral optical head is a miniature day-night electro-optical reconnaissance device integrating visible light and infrared capabilities, suitable for day and night operations. It automatically searches and tracks stationary/moving targets while outputting frame angle information.",
+        "application_scenario": "Its compact and shock-resistant design makes it ideal for fixed-wing drones, rotary-wing drones, and similar equipment, enabling tasks such as day-night reconnaissance, point surveillance, search and tracking, target identification, and guided strikes."
       }
     },
     "fpv": {

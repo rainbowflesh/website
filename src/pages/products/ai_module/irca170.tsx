@@ -1,21 +1,24 @@
 import { useTranslation } from "react-i18next";
 
-export const AIModuleApel2K = () => {
+export const AIModuleIrca170 = () => {
   const { t } = useTranslation();
   const features = [
-    { name: t("string.performance_advantages"), description: t("product.ai_module.apel2k.performance_advantages") },
-    { name: t("string.operating_altitude"), description: t("product.ai_module.apel2k.operating_altitude_specs") },
-    { name: t("string.positioning_accuracy"), description: t("product.ai_module.apel2k.positioning_accuracy_specs") },
+    { name: t("string.performance_advantages"), description: t("product.ai_module.irca170.performance_advantages") },
+    { name: t("string.operating_altitude"), description: t("product.ai_module.irca170.operating_altitude_specs") },
+    { name: t("string.positioning_accuracy"), description: t("product.ai_module.irca170.positioning_accuracy_specs") },
     {
       name: t("string.positioning_frequency"),
-      description: t("product.ai_module.apel2k.positioning_frequency_specs"),
+      description: t("product.ai_module.irca170.positioning_frequency_specs"),
     },
-    { name: t("string.laser_ranging"), description: t("product.ai_module.apel2k.laser_ranging_specs") },
-    { name: t("string.io_interfaces"), description: t("product.ai_module.apel2k.io_interfaces_specs") },
-    { name: t("string.installation_size"), description: t("product.ai_module.apel2k.installation_size_specs") },
-    { name: t("string.installation_weight"), description: t("product.ai_module.apel2k.installation_weight_specs") },
-    { name: t("string.tdp"), description: t("product.ai_module.apel2k.tdp_specs") },
-    { name: t("string.operating_temperature"), description: t("product.ai_module.apel2k.operating_temperature_specs") },
+    { name: t("string.laser_ranging"), description: t("product.ai_module.irca170.laser_ranging_specs") },
+    { name: t("string.io_interfaces"), description: t("product.ai_module.irca170.io_interfaces_specs") },
+    { name: t("string.installation_size"), description: t("product.ai_module.irca170.installation_size_specs") },
+    { name: t("string.installation_weight"), description: t("product.ai_module.irca170.installation_weight_specs") },
+    { name: t("string.tdp"), description: t("product.ai_module.irca170.tdp_specs") },
+    {
+      name: t("string.operating_temperature"),
+      description: t("product.ai_module.irca170.operating_temperature_specs"),
+    },
   ];
   return (
     <div className="dot-background dark:dot-background-dark">
@@ -25,10 +28,10 @@ export const AIModuleApel2K = () => {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
               {t("string.tech_specs")}
             </h2>
-            <p className="pt-4 pb-4 text-lg text-gray-500 dark:text-gray-400 ">{t("product.ai_module.apel2k.name")}</p>
-            <p>{t("product.ai_module.apel2k.introduce")}</p>
+            <p className="pt-4 pb-4 text-lg text-gray-500 dark:text-gray-400 ">{t("product.ai_module.irca170.name")}</p>
+            <p>{t("product.ai_module.irca170.introduce")}</p>
             <br />
-            <p>{t("product.ai_module.apel2k.application_scenario")}</p>
+            <p>{t("product.ai_module.irca170.application_scenario")}</p>
             <dl className="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
               {features.map((feature) => (
                 <div key={feature.name} className="border-t border-gray-200 pt-2">
@@ -41,11 +44,11 @@ export const AIModuleApel2K = () => {
         </div>
         <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:gap-8 relative overflow-hidden">
           <img
-            src="/images/ai_module/apel2k/cover.png"
+            src="/images/ai_module/irca170/cover.png"
             className="product-detail-img-p1 rounded-lg bg-gray-100 dark:bg-base-200"
           />
           <img
-            src="/images/ai_module/apel2k/apel2k.gif"
+            src="/images/ai_module/irca170/irca170.gif"
             className="product-detail-img-p1 bg-gray-100 dark:bg-base-200 rounded-lg shadow-lg m-auto"
           />
         </div>

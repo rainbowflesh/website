@@ -4,13 +4,12 @@ import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { I18nMenu } from "./I18nMenu";
 import { Logo } from "./Logos";
-import { urls } from "../routes";
+import { Pages, ProductPages } from "../routes";
 
 export const NavigationBar = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [isProductMenuOpen, setOpenProductMenu] = useState(false);
-
   let productMenuTimer: number = 0;
   const handleProductMenuMouseEnter = () => {
     clearTimeout(productMenuTimer);
@@ -38,36 +37,41 @@ export const NavigationBar = () => {
               <details open={isProductMenuOpen}>
                 <summary>{t("string.product")}</summary>
                 <ul id="navbar-dropdown1" className="bg-slate-50 dark:bg-base-300 items-start min-w-max">
-                  <li>
-                    <Link className="text-stone-500 dark:text-stone-400" to={urls.product_uav}>
+                  {/* <li>
+                    <Link className="text-stone-500 dark:text-stone-400" to={Pages.product_uav}>
                       {t("string.smart_uav")}
                     </Link>
                     <ul>
                       <li>
-                        <Link className="text-lg" to={urls.fpv_10inch}>
+                        <Link className="text-lg" to={ProductPages.fpv_10inch.route}>
                           {t("product.fpv.10inch.name")}
                         </Link>
                       </li>
                       <li>
-                        <Link className="text-lg" to={urls.fpv_7inch}>
+                        <Link className="text-lg" to={ProductPages.fpv_7inch.route}>
                           {t("product.fpv.7inch.name")}
                         </Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                   <li className=" items-start ">
-                    <Link className="text-stone-500 dark:text-stone-400" to={urls.product_ai_module}>
+                    <Link className="text-stone-500 dark:text-stone-400" to={Pages.product_ai_module}>
                       {t("string.ai_module")}
                     </Link>
                     <ul>
                       <li>
-                        <Link className="text-lg" to={urls.ai_module_lokon1}>
+                        <Link className="text-lg" to={ProductPages.ai_module_lokon1.route}>
                           {t("product.ai_module.lokon1.name")}
                         </Link>
                       </li>
                       <li>
-                        <Link className="text-lg" to={urls.ai_module_apel2k}>
+                        <Link className="text-lg" to={ProductPages.ai_module_apel2k.route}>
                           {t("product.ai_module.apel2k.name")}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="text-lg" to={ProductPages.ai_module_irca170.route}>
+                          {t("product.ai_module.irca170.name")}
                         </Link>
                       </li>
                     </ul>
@@ -76,17 +80,17 @@ export const NavigationBar = () => {
               </details>
             </Menu.Item>
             <Menu.Item className="relative">
-              <Link to={urls.contact} className="ghost rounded">
+              <Link to={Pages.contact} className="ghost rounded">
                 {t("string.contact")}
               </Link>
             </Menu.Item>
             <Menu.Item className="relative">
-              <Link to={urls.about} className="ghost rounded">
+              <Link to={Pages.about} className="ghost rounded">
                 {t("string.about")}
               </Link>
             </Menu.Item>
             <Menu.Item className="relative">
-              <Link to={urls.support} className="ghost rounded">
+              <Link to={Pages.support} className="ghost rounded">
                 {t("string.support")}
               </Link>
             </Menu.Item>

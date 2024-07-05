@@ -2,7 +2,7 @@ import { Button, Hero } from "react-daisyui";
 import { useTranslation } from "react-i18next";
 import { Analytics } from "@vercel/analytics/react";
 import { Link } from "react-router-dom";
-import { urls } from "../routes";
+import { Pages, ProductPages } from "../routes";
 
 import Carousel from "nuka-carousel";
 
@@ -46,11 +46,11 @@ export const Home = () => {
           <div className="grid grid-flow-col auto-cols-auto">
             <div className="size-1"></div>
             <Button className="">
-              <Link to={urls.ai_module_lokon1}>{t("string.learn_more")}</Link>
+              <Link to={ProductPages.ai_module_lokon1.route}>{t("string.learn_more")}</Link>
             </Button>
             <div className="size-1"></div>
             <Button color="neutral">
-              <Link to={urls.contact}>{t("string.buy_now")}</Link>
+              <Link to={Pages.contact}>{t("string.buy_now")}</Link>
             </Button>
             <div className="size-1"></div>
           </div>
