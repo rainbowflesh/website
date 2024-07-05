@@ -30,7 +30,14 @@ export const Home = () => {
           >
             <img className="bg-cover" src="/images/ai_module/lokon1/cover.jpg" />
             <img className="bg-cover bg-gray-100 dark:bg-base-200" src="/images/ai_module/lokon1/smart_cam_sys.png" />
-            <img className="bg-center bg-cover bg-premium-color" src="/images/fpv/10inch/cover.png" />
+            <img
+              className="bg-center bg-cover bg-premium-color dark:bg-premium-color"
+              src="/images/ai_module/apel2k/cover.png"
+            />
+            <img
+              className="bg-center bg-cover bg-gray-100 dark:bg-base-200"
+              src="/images/ai_module/irca170/cover.png"
+            />
           </Carousel>
         </div>
         <div className="w-full sm:w-1/3 max-w-4/5 md:w-1/2 lg:max-w-2/5">
