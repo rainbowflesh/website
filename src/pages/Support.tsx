@@ -96,6 +96,7 @@ export const Support: React.FC = () => {
           <p className="py-6">{t("text.support_center")}</p>
           <Card side="lg" className="bg-slate-100 dark:bg-base-300 rounded-box">
             <Card.Body>
+              <h2 className="text-lg">{t("string.user_manual")}</h2>
               <Table className="min-w-128 max-h-min overflow-auto">
                 <Table.Head className="table-pin-cols">
                   <Tooltip message={"click to sort"}>
@@ -103,7 +104,6 @@ export const Support: React.FC = () => {
                   </Tooltip>
                   <span onClick={() => handleSort("category")}>{t("string.category")}</span>
                   <span onClick={() => handleSort("name")}>{t("string.product_name")}</span>
-                  <span onClick={() => handleSort("download_type")}>{t("string.type")}</span>
                   <span>{t("string.download")}</span>
                 </Table.Head>
                 <Table.Body>
@@ -112,8 +112,7 @@ export const Support: React.FC = () => {
                       <span>{row.id}</span>
                       <span>{t(row.category)}</span>
                       <span>{t(row.name)}</span>
-                      <span>{t(row.download_type)}</span>
-                      <DownloadMenu data={row.download_url} />
+                      <DownloadMenu data={row.downloads} />
                     </Table.Row>
                   ))}
                 </Table.Body>

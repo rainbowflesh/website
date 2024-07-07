@@ -19,7 +19,7 @@ const VideoPlayerModal = () => {
     setIsModalOpen(true);
     if (!playerRef.current) {
       playerRef.current = YouTubePlayer("player", {
-        videoId: "VmhQKI8hNto",
+        // videoId: "VmhQKI8hNto",
         width: "100%",
         height: "400px",
       });
@@ -43,7 +43,7 @@ const VideoPlayerModal = () => {
       />
       <Modal open={isModalOpen}>
         <Modal.Header>
-          {t("string.demo_video")}
+          <span className="line-through">{t("string.demo_video")}</span>
           <Button
             size="sm"
             color="error"
@@ -115,7 +115,7 @@ export const AIModuleLokon1 = () => {
             src="/images/ai_module/lokon1/smart_cam_sys.png"
             className="product-detail-img-p1 bg-gray-100 dark:bg-base-200 rounded-lg shadow-lg"
           />
-          {/* <VideoPlayerModal /> */}
+          <VideoPlayerModal />
         </div>
       </div>
     </div>

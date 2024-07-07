@@ -2,8 +2,7 @@ interface ProductDataType {
   name: string;
   category: string;
   route: string;
-  download_type: string;
-  download_url: {
+  downloads: {
     [key: string]: string;
   };
 }

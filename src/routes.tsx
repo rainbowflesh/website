@@ -1,17 +1,20 @@
+import ProductIndex from "./index.json";
 import { Routes, Route } from "react-router-dom";
 // pages
 import { About } from "@pages/About";
 import { Contact } from "@pages/Contact";
 import { Home } from "@pages/Home";
+import { Index, AIModuleIndex } from "@pages/Product";
 import { Support } from "@pages/Support";
 import { TermOfService } from "@pages/ToS";
 import { Void } from "@pages/Void";
 // products
+import { AIModuleAim100 } from "@pages/products/ai_module/aim100";
 import { AIModuleApel2K } from "@pages/products/ai_module/apel2k";
 import { AIModuleIrca170 } from "@pages/products/ai_module/irca170";
+import { AIModuleIrca58 } from "@pages/products/ai_module/irca58";
+import { AIModuleLidara1 } from "@pages/products/ai_module/lidara1";
 import { AIModuleLokon1 } from "@pages/products/ai_module/lokon1";
-import { Index, AIModuleIndex } from "@pages/Product";
-import ProductIndex from "./index.json";
 
 const ProductPages: ProductIndexType = ProductIndex[0];
 
@@ -29,6 +32,7 @@ const Pages = {
 };
 
 const routes = [
+  // pages
   { path: "*", element: <Void /> },
   { path: Pages.about, element: <About /> },
   { path: Pages.contact, element: <Contact /> },
@@ -37,8 +41,12 @@ const routes = [
   { path: Pages.product, element: <Index /> },
   { path: Pages.support, element: <Support /> },
   { path: Pages.tos, element: <TermOfService /> },
+  // products
+  { path: ProductPages.ai_module_aim100.route, element: <AIModuleAim100 /> },
   { path: ProductPages.ai_module_apel2k.route, element: <AIModuleApel2K /> },
   { path: ProductPages.ai_module_irca170.route, element: <AIModuleIrca170 /> },
+  { path: ProductPages.ai_module_irca58.route, element: <AIModuleIrca58 /> },
+  { path: ProductPages.ai_module_lidara1.route, element: <AIModuleLidara1 /> },
   { path: ProductPages.ai_module_lokon1.route, element: <AIModuleLokon1 /> },
 ];
 

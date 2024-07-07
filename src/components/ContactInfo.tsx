@@ -38,7 +38,7 @@ export const ContactInfo = () => {
                 </div>
               </div>
             </Card>
-            <Divider className="dark:text-white ">{t("string.or")}</Divider>
+            <Divider className="dark:text-white">{t("string.or")}</Divider>
             <Card className="grid rounded-box place-items-center">
               <ContactForm />
             </Card>

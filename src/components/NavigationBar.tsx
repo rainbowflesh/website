@@ -65,18 +65,34 @@ export const NavigationBar = () => {
                           {t("product.ai_module.lokon1.name")}
                         </Link>
                       </li>
-                      <p className="text-xs mt-2"> {t("string.navigation_pod")}</p>
+                      <p className="text-xs mt-4"> {t("string.navigation_pod")}</p>
                       <li>
                         <Link className="text-lg" to={ProductPages.ai_module_apel2k.route}>
                           {t("product.ai_module.apel2k.name")}
                         </Link>
                       </li>
-                      <p className="text-xs mt-2"> {t("string.tracking_pod")}</p>
+                      {/* <li>
+                        <Link className="text-lg" to={ProductPages.ai_module_aim100.route}>
+                          {t("product.ai_module.aim100.name")}
+                        </Link>
+                      </li> */}
+                      <p className="text-xs mt-4"> {t("string.tracking_pod")}</p>
                       <li>
                         <Link className="text-lg" to={ProductPages.ai_module_irca170.route}>
                           {t("product.ai_module.irca170.name")}
                         </Link>
                       </li>
+                      {/* <li>
+                        <Link className="text-lg" to={ProductPages.ai_module_irca58.route}>
+                          {t("product.ai_module.irca58.name")}
+                        </Link>
+                      </li> */}
+                      {/* <p className="text-xs mt-4"> {t("string.lidar")}</p>
+                      <li>
+                        <Link className="text-lg" to={ProductPages.ai_module_lidara1.route}>
+                          {t("product.ai_module.lidara1.name")}
+                        </Link>
+                      </li> */}
                     </ul>
                   </li>
                 </ul>

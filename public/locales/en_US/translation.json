@@ -95,7 +95,8 @@
     "work_method": "Working Method",
     "zoom": "Zoom",
     "infrared_camera": "Infrared Camera",
-    "visible_light_camera": "Visible Light Camera"
+    "visible_light_camera": "Visible Light Camera",
+    "lidar": "LiDAR"
   },
   "text": {
     "404": "Into the Void",
@@ -199,6 +200,15 @@
         },
         "tdp": "Avg ≤10W; Peak ≤20W",
         "weight": "300g"
+      },
+      "aim100": {
+        "name": "AIM-100"
+      },
+      "lidara1": {
+        "name": "LiDARA-1"
+      },
+      "irca58": {
+        "name": "IRCa-58"
       }
     },
     "fpv": {
