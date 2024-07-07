@@ -51,7 +51,7 @@ export const AIModuleIrca170 = () => {
                       <ul>
                         {Object.keys(spec.description).map((key) => (
                           <li key={key}>
-                            <strong>{key}:</strong> {(spec.description as { [key: string]: string })[key]}{" "}
+                            <strong>{key}:</strong> {(spec.description as { [key: string]: string })[key]}
                           </li>
                         ))}
                       </ul>

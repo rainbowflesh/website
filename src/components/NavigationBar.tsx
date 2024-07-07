@@ -54,21 +54,24 @@ export const NavigationBar = () => {
                       </li>
                     </ul>
                   </li> */}
-                  <li className=" items-start ">
+                  <li className="items-start">
                     <Link className="text-stone-500 dark:text-stone-400" to={Pages.product_ai_module}>
                       {t("string.ai_module")}
                     </Link>
                     <ul>
+                      <p className="text-xs mt-2"> {t("string.terminal_guidance")}</p>
                       <li>
                         <Link className="text-lg" to={ProductPages.ai_module_lokon1.route}>
                           {t("product.ai_module.lokon1.name")}
                         </Link>
                       </li>
+                      <p className="text-xs mt-2"> {t("string.navigation_pod")}</p>
                       <li>
                         <Link className="text-lg" to={ProductPages.ai_module_apel2k.route}>
                           {t("product.ai_module.apel2k.name")}
                         </Link>
                       </li>
+                      <p className="text-xs mt-2"> {t("string.tracking_pod")}</p>
                       <li>
                         <Link className="text-lg" to={ProductPages.ai_module_irca170.route}>
                           {t("product.ai_module.irca170.name")}

@@ -34,7 +34,7 @@ export const AIModuleApel2K = () => {
             <p>{t("product.ai_module.apel2k.application_scenario")}</p>
             <div className="border-t border-gray-200 pt-2 mt-8">
               <dt className="font-medium text-gray-900 dark:text-gray-50">{t("string.features")}</dt>
-              <dd className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+              <dd className="mt-2 text-sm text-gray-500 dark:text-gray-400  leading-relaxed">
                 {typeof features === "string" ? (
                   <p>{features}</p>
                 ) : (

@@ -10,7 +10,7 @@ import { Void } from "@pages/Void";
 import { AIModuleApel2K } from "@pages/products/ai_module/apel2k";
 import { AIModuleIrca170 } from "@pages/products/ai_module/irca170";
 import { AIModuleLokon1 } from "@pages/products/ai_module/lokon1";
-import { Index, FPVIndex, AIModuleIndex } from "@pages/Product";
+import { Index, AIModuleIndex } from "@pages/Product";
 import ProductIndex from "./index.json";
 
 const ProductPages: ProductIndexType = ProductIndex[0];
@@ -34,7 +34,6 @@ const routes = [
   { path: Pages.contact, element: <Contact /> },
   { path: Pages.home, element: <Home /> },
   { path: Pages.product_ai_module, element: <AIModuleIndex /> },
-  { path: Pages.product_uav, element: <FPVIndex /> },
   { path: Pages.product, element: <Index /> },
   { path: Pages.support, element: <Support /> },
   { path: Pages.tos, element: <TermOfService /> },
