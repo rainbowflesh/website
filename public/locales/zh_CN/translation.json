@@ -61,7 +61,7 @@
     "name": "姓名",
     "support_center": "支持中心",
     "type": "类型",
-    "terminal_guidance": "末端制导",
+    "terminal_guidance": "末端引导",
     "smart_uav": "智能 UAV",
     "product_name": "产品名",
     "positioning_module": "定位模块",
@@ -78,11 +78,28 @@
     "installation_size": "安装大小",
     "feature_introduce": "功能介绍",
     "dimensions": "尺寸",
-    "application_scenario": "使用场景"
+    "application_scenario": "使用场景",
+    "azimuth": "方位角",
+    "elevation": "海拔",
+    "env_adapt": "环境适应性",
+    "features": "功能",
+    "fov": "视场角",
+    "infrared_camera": "红外相机",
+    "ptz": "云台",
+    "rain_resistance": "防雨能力",
+    "recognition_range": "识别范围",
+    "resolution": "分辨率",
+    "search_range": "搜寻范围",
+    "system_components": "系统组成",
+    "tracking_pod": "追踪吊舱",
+    "turret_type": "云台类型",
+    "visible_light_camera": "可见光相机",
+    "wind_resistance": "防风能力",
+    "zoom": "变焦"
   },
   "text": {
     "404": "步入虚空",
-    "company_introduce": "我们专注于无人机 AI 制导系统的研发和生产. 我们致力于提供先进的算法支持和解决方案. 除此之外, ZEEWIND 还提供行业垂直领域咨询服务, 帮助客户了解并满足其专业需求.",
+    "company_introduce": "我们专注于无人机 AI 导航系统的研发和生产. 我们致力于提供先进的算法支持和解决方案. 除此之外, ZEEWIND 还提供行业垂直领域咨询服务, 帮助客户了解并满足其专业需求.",
     "company_name_full": "ZEEWIND Inc,.",
     "company_name_short": "ZEEWIND",
     "company_slogan": "先进智能无人机系统",
@@ -102,7 +119,9 @@
     "company_profile_6": "选择 ZEEWIND，选择未来的无人机技术。",
     "email_us": "直接给我们发电子邮件",
     "learnmore": "了解更多 AI 模块的信息！",
-    "support_center": "下载产品手册和宣传册。"
+    "support_center": "下载产品手册和宣传册。",
+    "environmental_adaptability": "环境适应性",
+    "system_components": "系统组成"
   },
   "product": {
     "ai_module": {
@@ -117,16 +136,15 @@
         "ir_cam_specs": "分辨率: 256*192 像素 | 视场角: 60°",
         "name": "Lokon Gen 1",
         "tracking_range_specs": "人员: 200m | 车辆: 800m",
-        "wa_cam_description": "由于制导相机 FOV 较⼩, 增加⼴⾓摄像头扩展视场便于⼈⼯操控⻜⾏.",
+        "wa_cam_description": "由于导航相机 FOV 较⼩, 增加⼴⾓摄像头扩展视场便于⼈⼯操控⻜⾏.",
         "wa_cam_specs": "分辨率: 1280*960 px | DFOV: 150°",
         "ai_cam_description": "手动控制辅助和自动引导模块. ",
-        "introduce": "本智能跟踪模组具有 FPV 末端图像制导的功能，在遥控器⼿动锁定⽬标后 具备⾃动引导 FPV ⽆⼈机追踪⽬标直⾄碰撞的功能。该智能模组包含处理单元、 相机(替换原 FPV 系统⾃有相机)，需接入原有 FPV ⽆⼈机系统与⻜控、图传连接。"
+        "introduce": "本智能跟踪模组具有 FPV 末端图像引导的功能，在遥控器⼿动锁定⽬标后 具备⾃动引导 FPV ⽆⼈机追踪⽬标直⾄碰撞的功能。该智能模组包含处理单元、 相机(替换原 FPV 系统⾃有相机)，需接入原有 FPV ⽆⼈机系统与⻜控、图传连接。"
       },
       "apel2k": {
         "tdp_specs": "15w",
         "positioning_frequency_specs": "1 Hz",
         "positioning_accuracy_specs": "高度*5%（红外）/高度*3%（可见光）",
-        "performance_advantages": "全天候支持; 轻量化设计, 使用 CNC 一体式成型铝合金外壳; 地面适应性强 (适应农田、山区、草地等场景).",
         "application_scenario": "产品主要应用于高空无人机、巡飞弹等装备, 实现拒止环境下的高空、大范围飞行任务常态化执行.",
         "installation_size_specs": "传感器模块: 60*60*60mm; 主控模块: 100*60*25mm",
         "installation_weight_specs": "传感器模块: 200g; 主控模块: 110g",
@@ -135,7 +153,46 @@
         "laser_ranging_specs": "2km",
         "name": "APeL-2000",
         "operating_altitude_specs": "300-2000m",
-        "operating_temperature_specs": "-40℃ to 55℃"
+        "operating_temperature_specs": "-40℃ to 55℃",
+        "features": ["全天候支持", "轻量化设计, CNC 一体成型外壳;", "地面适应性强 (适应农田、山区、草地等场景)."]
+      },
+      "irca170": {
+        "application_scenario": "设备主要由两轴稳定转台和光电载荷球舱两部分组成，稳定转台包括 U 型支架、接口单元和伺服控制单元等，任务载荷球舱主要包括可见光相机组件、红外热像仪组件及图像处理及跟踪单元等。",
+        "env_adapt": {
+          "operating_temperature": "-40℃ to +55℃.",
+          "rain_resistance": "装机后能够在小雨条件（雨量 ≥0.5mm/h）下正常工作。",
+          "wind_resistance": "能够在 12m/s 的风速（六级风）下正常工作；"
+        },
+        "features[0]": "具有可见光和红外侦察功能；",
+        "features[1]": "具有视轴稳定功能（两轴稳定）；",
+        "features[2]": "具有目标手动和自动跟踪功能；",
+        "features[3]": "具有光电载荷状态信息输出功能；",
+        "features[4]": "具有可见光和红外图像数字变焦功能；",
+        "features[5]": "具有状态参数、标识框显隐功能；",
+        "features[6]": "具备典型目标识别功能；",
+        "features[7]": "具备跟踪波门微调功能。",
+        "introduce": "ZW-IRCa-170 双光导引头是一款集可见光、红外于一体的微型昼夜光电侦察设备，满足昼夜使用要求。可以自动搜索和跟踪固定/移动目标，同时输出框架角信息。结构设计紧凑、抗发射冲击，主要应用于固定翼无人机、旋翼无人机等装备，实现对目标的昼夜侦察、定点监视、搜索跟踪、识别和导引打击等任务。",
+        "irl": {
+          "fov": "≥20° (H) * 15° (V)",
+          "recognition_range": "夜间，能见度不小于 3km、相对湿度不大于 90%、背景温差不小于 5K 条件下，对 4m×6m 车辆目标识别距离：≥700m。",
+          "resolution": "640*512",
+          "zoom": "×2 档数字变焦。"
+        },
+        "name": "IRCa-170",
+        "ptz": {
+          "azimuth": "-115° ~ 115°.",
+          "elevation": "-80° ~ ＋15°（水平向前为 0°，向上为正）；",
+          "turret_type": "两轴两框架；"
+        },
+        "system_components": "设备主要由两轴稳定转台和光电载荷球舱两部分组成，稳定转台包括 U 型支架、接口单元和伺服控制单元等，任务载荷球舱主要包括可见光相机组件、红外热像仪组件及图像处理及跟踪单元等。",
+        "tdp": "常值 Avg≤10W，峰值 max≤20W。",
+        "vll": {
+          "fov": "≥25° (H) * 15° (V)",
+          "recognition_range": "能见度不小于 3km、相对湿度不大于 90%条件下，对 4m×6m 车辆目标识别距离：≥1000m。\n2. 图像传感器：彩色 CMOS；",
+          "resolution": "3840*2160",
+          "zoom": "×5 档数字变焦"
+        },
+        "weight": "300g"
       }
     },
     "fpv": {
@@ -146,6 +203,5 @@
         "name": "7寸 FPV"
       }
     }
-  },
-  "string_user_manual": "用户手册"
+  }
 }

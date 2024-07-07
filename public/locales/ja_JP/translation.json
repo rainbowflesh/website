@@ -78,7 +78,24 @@
     "positioning_module": "位置決めモジュール",
     "product_name": "プロカット名",
     "smart_uav": "スマートUAV",
-    "terminal_guidance": "ターミナル案内"
+    "terminal_guidance": "ターミナル案内",
+    "azimuth": "方位角",
+    "elevation": "標高",
+    "env_adapt": "環境適応力",
+    "features": "特徴",
+    "fov": "視野",
+    "infrared_camera": "赤外線カメラ",
+    "ptz": "PTZ",
+    "rain_resistance": "耐雨性",
+    "recognition_range": "認識範囲",
+    "resolution": "解決",
+    "search_range": "検索範囲",
+    "system_components": "システムコンポーネント",
+    "tracking_pod": "追跡ポッド",
+    "turret_type": "タレットタイプ",
+    "visible_light_camera": "可視光カメラ",
+    "wind_resistance": "耐風性",
+    "zoom": "ズーム"
   },
   "text": {
     "404": "虚空へ",
@@ -102,7 +119,9 @@
     "company_profile_3": "過去 3 年間で、ZEWIND は急速に成長し、現在従業員数は合計 30 名となり、うち 20 名以上が R 専任です。",
     "company_profile_4": "当社は、特に GPS が拒否された環境における信頼性の高い測位とナビゲーションの確保において、ドローン技術の最前線を前進させることに尽力しています。\n当社の強みは、独自のアルゴリズム、飛行制御システム、高度なアルゴリズム開発にあります。\n継続的な技術革新と最適化により、当社のドローン製品はパフォーマンスと信頼性の点で業界をリードし、さまざまな複雑な環境で動作することができます。",
     "company_profile_5": "当社は顧客第一主義と技術リーダーシップの原則を堅持し、高品質のドローン製品と専門的な技術サポートを顧客に提供します。\n私たちの目標は、特殊用途ドローン業界の世界的リーダーになることです。",
-    "company_profile_6": "ZEEEWIND を選択し、ドローン技術の未来を選択してください。"
+    "company_profile_6": "ZEEEWIND を選択し、ドローン技術の未来を選択してください。",
+    "environmental_adaptability": "環境適応力",
+    "system_components": "システムコンポーネント"
   },
   "product": {
     "ai_module": {
@@ -126,7 +145,6 @@
         "tdp_specs": "15w",
         "positioning_frequency_specs": "1 Hz",
         "positioning_accuracy_specs": "高さ * 5% (赤外線) / 高さ * 3% (可視光)",
-        "performance_advantages": "終日サポート。\n軽量設計。 \nCNC一体成型アルミニウムシェル。\n強力な空対地視覚適応性 (野原、山岳地帯、草原、その他のシナリオに適しています)。",
         "application_scenario": "これらの製品は、主に高高度 UAV、巡航ミサイル、その他の機器に使用され、拒否環境における高高度および大規模な飛行ミッションの正常化を実現します。",
         "installation_size_specs": "センサーモジュール: 60*60*60mm;\nメインコントロールユニット: 100*60*25mm",
         "installation_weight_specs": "センサーモジュール: 200g;\nメインコントロールユニット: 110g",
@@ -135,7 +153,50 @@
         "laser_ranging_specs": "2km",
         "name": "APeL-2000",
         "operating_altitude_specs": "300-2000m",
-        "operating_temperature_specs": "-40℃ to 55℃"
+        "operating_temperature_specs": "-40℃ to 55℃",
+        "features": [
+          "終日/天候に応じて適用可能。",
+          "軽量設計, CNC一体成型アルミニウムシェル。",
+          "強力な空対地視覚適応性 (野原、山岳地帯、草原、その他のシナリオに適しています)。"
+        ]
+      },
+      "irca170": {
+        "env_adapt": {
+          "operating_temperature": "-40℃ to +55℃.",
+          "rain_resistance": "小雨条件（降雨量 ≥0.5mm/h）でも動作します。",
+          "wind_resistance": "風速 12m/s (レベル 6 風) の下で動作します。"
+        },
+        "irl": {
+          "fov": "≥20° (H) * 15° (V)",
+          "resolution": "640*512",
+          "recognition_range": "夜間、視程が 3km 以上、相対湿度が 90% 以下、背景温度差が 5K 以上の場合、4m*6m の車両の目標認識範囲: ≥700m。",
+          "zoom": "x2デジタルズーム"
+        },
+        "name": "IRCa-170",
+        "ptz": {
+          "azimuth": "-115° ~ 115°.",
+          "elevation": "-80° ～ 15° (0° は水平前方、正は上向き)。",
+          "turret_type": "2軸2フレーム。"
+        },
+        "vll": {
+          "fov": "≥25° (H) * 15° (V)",
+          "resolution": "3840*2160",
+          "recognition_range": "日中、視程が 3km 以上、相対湿度が 90% 以下の場合、4m*6m の車両の目標認識範囲: ≥1000m。",
+          "zoom": "x5デジタルズーム"
+        },
+        "weight": "300g",
+        "application_scenario": "コンパクトで耐衝撃性に優れた設計は、固定翼ドローン、回転翼ドローン、および類似の機器に最適であり、昼夜の偵察、地点監視、探索と追跡、目標の特定、誘導攻撃などのタスクを可能にします。",
+        "features[0]": "可視光線と赤外線による偵察機能を備えています。",
+        "features[1]": "視線手ぶれ補正（2軸手ぶれ補正）を搭載。",
+        "features[2]": "手動および自動のターゲット追跡機能をサポートします。",
+        "features[3]": "電気光学ペイロードステータス情報の出力を提供します。",
+        "features[4]": "可視光および赤外線画像のデジタルズーム機能を提供します。",
+        "features[5]": "ステータスパラメータの表示と識別フレームの可視性制御が含まれます。",
+        "features[6]": "典型的なターゲット認識が可能。",
+        "features[7]": "トラッキングゲートの微調整機能が含まれています。",
+        "introduce": "ZW-IRCa-170 デュアルスペクトル光学ヘッドは、可視光と赤外線の機能を統合した小型の昼夜用電気光学偵察装置で、昼夜を問わず操作に適しています。\nフレーム角度情報を出力しながら静止・移動目標を自動探索・追尾します。",
+        "system_components": "この装置は主に、2 軸安定化タレットと電気光学式ペイロード ポッドで構成されています。\n安定化タレットには、U 字型ブラケット、インターフェイス ユニット、サーボ コントロール ユニットが含まれています。\nミッションペイロードポッドは主に、可視光カメラコンポーネント、赤外線サーマルイメージャコンポーネント、画像処理および追跡ユニットで構成されます。",
+        "tdp": "平均 ≤10W。\nピーク ≤ 20W"
       }
     },
     "fpv": {
@@ -146,6 +207,5 @@
         "name": "7インチFPV"
       }
     }
-  },
-  "string_user_manual": "ユーザーマニュアル"
+  }
 }

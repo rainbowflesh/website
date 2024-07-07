@@ -2,8 +2,11 @@ import { useTranslation } from "react-i18next";
 
 export const AIModuleApel2K = () => {
   const { t } = useTranslation();
-  const features = [
-    { name: t("string.performance_advantages"), description: t("product.ai_module.apel2k.performance_advantages") },
+  const features: Array<any> = t("product.ai_module.apel2k.features", {
+    returnObjects: true,
+  });
+
+  const specs = [
     { name: t("string.operating_altitude"), description: t("product.ai_module.apel2k.operating_altitude_specs") },
     { name: t("string.positioning_accuracy"), description: t("product.ai_module.apel2k.positioning_accuracy_specs") },
     {
@@ -29,8 +32,22 @@ export const AIModuleApel2K = () => {
             <p>{t("product.ai_module.apel2k.introduce")}</p>
             <br />
             <p>{t("product.ai_module.apel2k.application_scenario")}</p>
+            <div className="border-t border-gray-200 pt-2 mt-8">
+              <dt className="font-medium text-gray-900 dark:text-gray-50">{t("string.features")}</dt>
+              <dd className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                {typeof features === "string" ? (
+                  <p>{features}</p>
+                ) : (
+                  <ul className="list-disc px-4">
+                    {features.map((feature, index) => (
+                      <li key={index}>{feature}</li>
+                    ))}
+                  </ul>
+                )}
+              </dd>
+            </div>
             <dl className="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-              {features.map((feature) => (
+              {specs.map((feature) => (
                 <div key={feature.name} className="border-t border-gray-200 pt-2">
                   <dt className="font-medium text-gray-900 dark:text-gray-50">{feature.name}</dt>
                   <dd className="mt-2 text-sm text-gray-500 dark:text-gray-400">{feature.description}</dd>

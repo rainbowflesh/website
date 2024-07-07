@@ -19,3 +19,8 @@ interface DownloadDataType extends ProductDataType {
 interface DownloadIndexType {
   [key: string]: string;
 }
+
+interface NestedSpec {
+  name: string;
+  description: string | { [key: string]: string };
+}

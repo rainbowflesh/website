@@ -6,6 +6,7 @@
     "ai_cam": "AI Cam",
     "ai_module": "AI Module",
     "application_scenario": "Application Scenario",
+    "azimuth": "Azimuth",
     "battery_life": "Battery Life",
     "buy_now": "Buy Now",
     "category": "Category",
@@ -18,9 +19,13 @@
     "demo_video": "Demo Video",
     "dimensions": "Dimension",
     "download": "Download",
+    "elevation": "Elevation",
+    "env_adapt": "Environmental Adaptability",
     "email": "Email",
     "feature_introduce": "Feature Introduce",
+    "features": "Features",
     "first_name": "First name",
+    "fov": "FOV",
     "fpv_10inch": "10\" FPV Drone",
     "fpv_7inch": "7\" FPV Drone",
     "fpv_assault_demo": "FPV Assault Demo",
@@ -30,6 +35,7 @@
     "io_interfaces": "IO Interfaces",
     "ir_cam": "IR Cam",
     "job_title": "Job Title",
+    "language": "Language",
     "laser_ranging": "Laser Ranging",
     "last_name": "Last name",
     "learn_more": "Learn more",
@@ -37,7 +43,6 @@
     "legal": "Legal",
     "name": "Name",
     "navigation_pod": "Navigation Pod",
-    "tracking_pod": "Tracking Pod",
     "operating_altitude": "Operating Altitude",
     "operating_temperature": "Operating Temperature",
     "optional": "Optional",
@@ -50,10 +55,16 @@
     "power_source": "Power Source",
     "product_catalog": "Product Catalog",
     "product_list": "Product List",
+    "product_name": "Procut Name",
     "product": "Product",
     "protect_level": "Protection Level",
+    "ptz": "PTZ",
+    "rain_resistance": "Rain Resistance",
+    "recognition_range": "Recognition Range",
     "required": "Required",
+    "resolution": "Resolution",
     "sale_manager": "Sale Manager",
+    "search_range": "Search Range",
     "send": "Send",
     "service": "Service",
     "showcase": "Showcase",
@@ -62,12 +73,15 @@
     "smart_uav": "Smart UAV",
     "support_center": "Support center",
     "support": "Support",
+    "system_components": "System Components",
     "tdp": "TDP",
     "tech_specs": "Tech Specs",
     "tech_support": "Tech Support",
-    "terminal_guidance": "Terminal Guidance",
     "tel": "Tel",
+    "terminal_guidance": "Terminal Guidance",
+    "tracking_pod": "Tracking Pod",
     "tracking_range": "Tracking Range",
+    "turret_type": "Turret Type",
     "type": "Type",
     "uav": "UAV",
     "ur_email": "Your Email",
@@ -77,9 +91,11 @@
     "wechat": "WeChat",
     "weight": "Weight",
     "whatsapp": "WhatsApp",
+    "wind_resistance": "Wind Resistance",
     "work_method": "Working Method",
-    "language": "Language",
-    "product_name": "Procut Name"
+    "zoom": "Zoom",
+    "infrared_camera": "Infrared Camera",
+    "visible_light_camera": "Visible Light Camera"
   },
   "text": {
     "404": "Into the Void",
@@ -102,7 +118,9 @@
     "company_profile_5": "We uphold the principles of customer-first and technology leadership, providing high-quality drone products and professional technical support to our clients. Our goal is to become the global leader in the special-purpose drone industry.",
     "company_profile_6": "Choose ZEEWIND, choose the future of drone technology.",
     "learnmore": "Learn more about AI module!",
+    "system_components": "System Components",
     "email_us": "Email us directly",
+    "environmental_adaptability": "Environmental Adaptability",
     "support_center": "Download product brochures and manuals."
   },
   "product": {
@@ -133,15 +151,52 @@
         "name": "APeL-2000",
         "operating_altitude_specs": "300-2000m",
         "operating_temperature_specs": "-40℃ to 55℃",
-        "performance_advantages": "All day support; Lightweight design; CNC one-piece molding aluminum shell; Strong Air-to-Ground vision adaptability (suitable for fields, mountainous areas, grasslands, and other scenarios).",
+        "features": [
+          "All day/weather support;",
+          "Lightweight design; CNC one-piece molding aluminum shell;",
+          "Strong Air-to-Ground vision adaptability (suitable for fields, mountainous areas, grasslands, and other scenarios)."
+        ],
         "positioning_accuracy_specs": "Height * 5% (infrared) / Height * 3% (visible light)",
         "positioning_frequency_specs": "1 Hz",
         "tdp_specs": "15w"
       },
       "irca170": {
-        "name": "IRCa170",
+        "name": "IRCa-170",
         "introduce": "ZW-IRCa-170 dual-spectral optical head is a miniature day-night electro-optical reconnaissance device integrating visible light and infrared capabilities, suitable for day and night operations. It automatically searches and tracks stationary/moving targets while outputting frame angle information.",
-        "application_scenario": "Its compact and shock-resistant design makes it ideal for fixed-wing drones, rotary-wing drones, and similar equipment, enabling tasks such as day-night reconnaissance, point surveillance, search and tracking, target identification, and guided strikes."
+        "application_scenario": "Its compact and shock-resistant design makes it ideal for fixed-wing drones, rotary-wing drones, and similar equipment, enabling tasks such as day-night reconnaissance, point surveillance, search and tracking, target identification, and guided strikes.",
+        "features[0]": "Features visible light and infrared reconnaissance capabilities;",
+        "features[1]": "Equipped with line-of-sight stabilization (two-axis stabilization);",
+        "features[2]": "Supports manual and automatic target tracking functions;",
+        "features[3]": "Provides output of electro-optical payload status information;",
+        "features[4]": "Offers digital zoom functions for visible light and infrared images;",
+        "features[5]": "Includes status parameter display and identification frame visibility control;",
+        "features[6]": "Capable of typical target recognition;",
+        "features[7]": "Includes tracking gate fine-tuning functionality.",
+        "system_components": "The device mainly consists of a two-axis stabilized turret and an electro-optical payload pod. The stabilized turret includes a U-shaped bracket, interface unit, and servo control unit. The mission payload pod primarily comprises visible light camera components, infrared thermal imager components, and image processing and tracking units.",
+        "ptz": {
+          "turret_type": "Two-axis, two-frame.",
+          "azimuth": "-115° ~ 115°.",
+          "elevation": "-80° to +15° (0° is horizontal forward, positive is upward)."
+        },
+        "vll": {
+          "recognition_range": "During daytime, with visibility not less than 3km and relative humidity not exceeding 90%, target recognition range for a 4m*6m vehicle: ≥1000m.",
+          "resolution": "3840*2160",
+          "fov": "≥25° (H) * 15° (V)",
+          "zoom": "x5 digital zoom"
+        },
+        "irl": {
+          "recognition_range": "During nighttime, with visibility not less than 3km, relative humidity not exceeding 90%, and background temperature difference not less than 5K, target recognition range for a 4m*6m vehicle: ≥700m.",
+          "resolution": "640*512",
+          "fov": "≥20° (H) * 15° (V)",
+          "zoom": "x2 digital zoom"
+        },
+        "env_adapt": {
+          "operating_temperature": "-40℃ to +55℃.",
+          "wind_resistance": "Operational under 12m/s wind speed (level six wind).",
+          "rain_resistance": "Operational in light rain conditions (rainfall ≥0.5mm/h)."
+        },
+        "tdp": "Avg ≤10W; Peak ≤20W",
+        "weight": "300g"
       }
     },
     "fpv": {
@@ -152,6 +207,5 @@
         "name": "7 Inch FPV"
       }
     }
-  },
-  "string_user_manual": "User Manual"
+  }
 }
