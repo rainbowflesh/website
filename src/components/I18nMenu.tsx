@@ -31,7 +31,7 @@ export const I18nMenu = () => {
         </Dropdown.Item>
         <Dropdown.Item
           onClick={() => {
-            i18n.changeLanguage("zh_cn");
+            i18n.changeLanguage("zh-Hans");
           }}
         >
           中文
