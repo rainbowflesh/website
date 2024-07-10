@@ -122,9 +122,9 @@ export const Support: React.FC = () => {
           <div>
             <Divider className="dark:text-white ">{t("string.or")}</Divider>
             <h1 className="text-4xl font-bold mt-2 mb-2">{t("text.email_us")}</h1>
-            <a className="text-gray-400 mb-2" href={"mailto:contact@zeewind-uav.com"}>
+            <a className="text-gray-400 mb-2" href={"mailto:support@zeewind-uav.com"}>
               <span className="text-black dark:text-white">{t("string.tech_support")}: </span>
-              contact@zeewind-uav.com
+              support@zeewind-uav.com
             </a>
           </div>
         </div>
