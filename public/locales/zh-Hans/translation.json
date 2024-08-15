@@ -95,7 +95,13 @@
     "turret_type": "云台类型",
     "visible_light_camera": "可见光相机",
     "wind_resistance": "防风能力",
-    "zoom": "变焦"
+    "zoom": "变焦",
+    "cam_refresh_rate": "相机刷新率",
+    "cam_sensor": "相机传感器",
+    "control_protocol": "控制协议",
+    "lidar": "激光雷达",
+    "video_protocol": "视频协议",
+    "minimal_tracking_size": "最小跟踪尺寸"
   },
   "text": {
     "404": "步入虚空",
@@ -126,7 +132,6 @@
   "product": {
     "ai_module": {
       "lokon1": {
-        "ai_accuracy": "±1m",
         "ai_cam_specs": "分辨率: 1280*960 px | DFOV: 46°(H) * 35°(V)",
         "ai_power_source": "4S~6S 宽电压输入",
         "ai_size": "30mm*30mm*10mm",
@@ -139,7 +144,17 @@
         "wa_cam_description": "由于导航相机 FOV 较⼩, 增加⼴⾓摄像头扩展视场便于⼈⼯操控⻜⾏.",
         "wa_cam_specs": "分辨率: 1280*960 px | DFOV: 150°",
         "ai_cam_description": "手动控制辅助和自动引导模块. ",
-        "introduce": "本智能跟踪模组具有 FPV 末端图像引导的功能，在遥控器⼿动锁定⽬标后 具备⾃动引导 FPV ⽆⼈机追踪⽬标直⾄碰撞的功能。该智能模组包含处理单元、 相机(替换原 FPV 系统⾃有相机)，需接入原有 FPV ⽆⼈机系统与⻜控、图传连接。"
+        "introduce": "本智能跟踪模组具有 FPV 末端图像引导的功能，在遥控器⼿动锁定⽬标后 具备⾃动引导 FPV ⽆⼈机追踪⽬标直⾄碰撞的功能。该智能模组包含处理单元、 相机(替换原 FPV 系统⾃有相机)，需接入原有 FPV ⽆⼈机系统与⻜控、图传连接。",
+        "ai_cam_accuracy": "±3m",
+        "ai_cam_refresh_rate": "50Hz",
+        "ai_cam_sensor_specs": "1/1.8 寸传感器",
+        "control_protocol": "Mavlink",
+        "minimal_tracking_size": "16*16 ~ 128*125 像素",
+        "power_source": "4S~6S 宽电压输入",
+        "size": "30mm*30mm*10mm",
+        "tracking_range": "人员：150m；\n车辆：300m",
+        "video_protocol": "PAL",
+        "weight": "20g"
       },
       "apel2k": {
         "tdp_specs": "15w",
@@ -195,6 +210,15 @@
           "zoom": "×5 档数字变焦"
         },
         "weight": "300g"
+      },
+      "aim100": {
+        "name": "AIM-100"
+      },
+      "lidara1": {
+        "name": "LiDARA-1"
+      },
+      "irca58": {
+        "name": "IRCa-58"
       }
     },
     "fpv": {

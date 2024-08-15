@@ -28,8 +28,7 @@ export const Home = () => {
             }}
             className="rounded-box h-128 overflow-hidden"
           >
-            <img className="bg-cover" src="/images/ai_module/lokon1/cover.jpg" />
-            <img className="bg-cover bg-gray-100 dark:bg-base-200" src="/images/ai_module/lokon1/smart_cam_sys.png" />
+            <img className="bg-cover bg-gray-100 dark:bg-base-200" src="/images/ai_module/lokon1/cover.png" />
             <img
               className="bg-center bg-cover bg-premium-color dark:bg-premium-color"
               src="/images/ai_module/apel2k/cover.png"

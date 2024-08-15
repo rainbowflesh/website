@@ -20,8 +20,8 @@
     "dimensions": "Dimension",
     "download": "Download",
     "elevation": "Elevation",
-    "env_adapt": "Environmental Adaptability",
     "email": "Email",
+    "env_adapt": "Environmental Adaptability",
     "feature_introduce": "Feature Introduce",
     "features": "Features",
     "first_name": "First name",
@@ -30,6 +30,7 @@
     "fpv_7inch": "7\" FPV Drone",
     "fpv_assault_demo": "FPV Assault Demo",
     "fpv": "FPV",
+    "infrared_camera": "Infrared Camera",
     "installation_size": "Installation Size",
     "installation_weight": "Installation Weight",
     "io_interfaces": "IO Interfaces",
@@ -41,6 +42,7 @@
     "learn_more": "Learn more",
     "leave_ur_contact": "Leave your contact",
     "legal": "Legal",
+    "lidar": "LiDAR",
     "name": "Name",
     "navigation_pod": "Navigation Pod",
     "operating_altitude": "Operating Altitude",
@@ -87,6 +89,7 @@
     "ur_email": "Your Email",
     "ur_msg": "Your message",
     "user_manual": "User Manual",
+    "visible_light_camera": "Visible Light Camera",
     "wa_cam": "Wide Angle Cam",
     "wechat": "WeChat",
     "weight": "Weight",
@@ -94,9 +97,11 @@
     "wind_resistance": "Wind Resistance",
     "work_method": "Working Method",
     "zoom": "Zoom",
-    "infrared_camera": "Infrared Camera",
-    "visible_light_camera": "Visible Light Camera",
-    "lidar": "LiDAR"
+    "minimal_tracking_size": "Minimal Tracking Size",
+    "cam_sensor": "Camera Sensor",
+    "cam_refresh_rate": "Camera Refresh Rate",
+    "control_protocol": "Control Protocol",
+    "video_protocol": "Video protocol"
   },
   "text": {
     "404": "Into the Void",
@@ -127,7 +132,7 @@
   "product": {
     "ai_module": {
       "lokon1": {
-        "ai_accuracy": "±1m",
+        "ai_cam_accuracy": "±3m",
         "ai_cam_description": "Manual control assistance and automatic guidance module.",
         "ai_cam_specs": "Resolution: 1280*960 px | DFOV: 46°(H) * 35°(V)",
         "ai_power_source": "4S~6S Wide Voltage Input",
@@ -140,7 +145,16 @@
         "name": "Lokon Gen 1",
         "tracking_range_specs": "Person: 200m | Vehicle: 800m",
         "wa_cam_description": "Since the guidance camera FOV is small, increasing the wide-angle camera to expand the field of view facilitates manual flight control.",
-        "wa_cam_specs": "Resolution: 1280*960 px | DFOV: 150°"
+        "wa_cam_specs": "Resolution: 1280*960 px | DFOV: 150°",
+        "tracking_range": "Person: 150m; Veichle: 300m",
+        "minimal_tracking_size": "16*16 ~ 128*125 pixels",
+        "video_protocol": "PAL",
+        "control_protocol": "Mavlink",
+        "ai_cam_sensor_specs": "1/1.8 Inch Sensor",
+        "ai_cam_refresh_rate": "50Hz",
+        "power_source": "4S~6S Wide Voltage Input",
+        "size": "30mm*30mm*10mm",
+        "weight": "20g"
       },
       "apel2k": {
         "application_scenario": "The products are mainly used in high-altitude UAVs, cruise missiles and other equipment to achieve the normalization of high-altitude and large-scale flight missions in a denial environment.",

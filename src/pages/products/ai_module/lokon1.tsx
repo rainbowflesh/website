@@ -19,7 +19,7 @@ const VideoPlayerModal = () => {
     setIsModalOpen(true);
     if (!playerRef.current) {
       playerRef.current = YouTubePlayer("player", {
-        // videoId: "VmhQKI8hNto",
+        videoId: "0jlimc0Rxf8",
         width: "100%",
         height: "400px",
       });
@@ -41,9 +41,9 @@ const VideoPlayerModal = () => {
         alt={t("string.fpv_assault_demo")}
         className="product-detail-img-p2 rounded-lg bg-gray-100 dark:bg-base-200 m-auto transition-transform duration-300 transform hover:scale-130"
       />
-      <Modal open={isModalOpen}>
+      <Modal className="min-w-4/5" open={isModalOpen}>
         <Modal.Header>
-          <span className="line-through">{t("string.demo_video")}</span>
+          <span className="">{t("string.demo_video")}</span>
           <Button
             size="sm"
             color="error"
@@ -74,17 +74,19 @@ const VideoPlayerModal = () => {
 export const AIModuleLokon1 = () => {
   const { t } = useTranslation();
   const features = [
-    { name: t("string.ai_cam"), description: t("product.ai_module.lokon1.ai_cam_specs") },
-    { name: t("string.work_method"), description: t("product.ai_module.lokon1.ai_cam_description") },
+    { name: t("string.tracking_range"), description: t("product.ai_module.lokon1.tracking_range") },
+    { name: t("string.minimal_tracking_size"), description: t("product.ai_module.lokon1.minimal_tracking_size") },
+    { name: t("string.accuracy"), description: t("product.ai_module.lokon1.ai_cam_accuracy") },
+    { name: t("string.video_protocol"), description: t("product.ai_module.lokon1.video_protocol") },
+    { name: t("string.control_protocol"), description: t("product.ai_module.lokon1.control_protocol") },
+    { name: t("string.ai_cam"), description: t("product.ai_module.lokon1.ai_cam_description") },
+    { name: t("string.cam_sensor"), description: t("product.ai_module.lokon1.ai_cam_sensor_specs") },
+    { name: t("string.cam_refresh_rate"), description: t("product.ai_module.lokon1.ai_cam_refresh_rate") },
     { name: t("string.wa_cam"), description: t("product.ai_module.lokon1.wa_cam_specs") },
-    { name: t("string.work_method"), description: t("product.ai_module.lokon1.wa_cam_description") },
     { name: t("string.ir_cam"), description: t("product.ai_module.lokon1.ir_cam_specs") },
-    { name: t("string.work_method"), description: t("product.ai_module.lokon1.ir_cam_description") },
-    { name: t("string.accuracy"), description: t("product.ai_module.lokon1.ai_accuracy") },
-    { name: t("string.tdp"), description: t("product.ai_module.lokon1.ai_tdp") },
-    { name: t("string.size"), description: t("product.ai_module.lokon1.ai_size") },
-    { name: t("string.weight"), description: t("product.ai_module.lokon1.ai_weight") },
-    { name: t("string.power_source"), description: t("product.ai_module.lokon1.ai_power_source") },
+    { name: t("string.power_source"), description: t("product.ai_module.lokon1.power_source") },
+    { name: t("string.size"), description: t("product.ai_module.lokon1.size") },
+    { name: t("string.weight"), description: t("product.ai_module.lokon1.weight") },
   ];
   return (
     <div className="dot-background dark:dot-background-dark">
@@ -108,7 +110,7 @@ export const AIModuleLokon1 = () => {
         </div>
         <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:gap-8 relative overflow-hidden">
           <img
-            src="/images/ai_module/lokon1/cover.jpg"
+            src="/images/ai_module/lokon1/cover.png"
             className="product-detail-img-p1 rounded-lg bg-gray-100 dark:bg-base-200"
           />
           <img
