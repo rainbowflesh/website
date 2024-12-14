@@ -37,7 +37,7 @@ export const NavigationBar = () => {
               <details open={isProductMenuOpen}>
                 <summary>{t("string.product")}</summary>
                 <ul id="navbar-dropdown1" className="bg-slate-50 dark:bg-base-300 items-start min-w-max">
-                  {/* <li>
+                  <li>
                     <Link className="text-stone-500 dark:text-stone-400" to={Pages.product_uav}>
                       {t("string.smart_uav")}
                     </Link>
@@ -53,7 +53,7 @@ export const NavigationBar = () => {
                         </Link>
                       </li>
                     </ul>
-                  </li> */}
+                  </li>
                   <li className="items-start">
                     <Link className="text-stone-500 dark:text-stone-400" to={Pages.product_ai_module}>
                       {t("string.ai_module")}
@@ -71,28 +71,28 @@ export const NavigationBar = () => {
                           {t("product.ai_module.apel2k.name")}
                         </Link>
                       </li>
-                      {/* <li>
+                      <li>
                         <Link className="text-lg" to={ProductPages.ai_module_aim100.route}>
                           {t("product.ai_module.aim100.name")}
                         </Link>
-                      </li> */}
+                      </li>
                       <p className="text-xs mt-4"> {t("string.tracking_pod")}</p>
                       <li>
                         <Link className="text-lg" to={ProductPages.ai_module_irca170.route}>
                           {t("product.ai_module.irca170.name")}
                         </Link>
                       </li>
-                      {/* <li>
+                      <li>
                         <Link className="text-lg" to={ProductPages.ai_module_irca58.route}>
                           {t("product.ai_module.irca58.name")}
                         </Link>
-                      </li> */}
-                      {/* <p className="text-xs mt-4"> {t("string.lidar")}</p>
+                      </li>
+                      <p className="text-xs mt-4"> {t("string.lidar")}</p>
                       <li>
                         <Link className="text-lg" to={ProductPages.ai_module_lidara1.route}>
                           {t("product.ai_module.lidara1.name")}
                         </Link>
-                      </li> */}
+                      </li>
                     </ul>
                   </li>
                 </ul>

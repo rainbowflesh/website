@@ -9,9 +9,9 @@ export const FooterBar = () => {
     <Footer className="p-10 bg-neutral text-neutral-content">
       <div>
         <Footer.Title>{t("string.product")}</Footer.Title>
-        {/* <Link to={Pages.product_uav} className="link link-hover">
+        <Link to={Pages.product_uav} className="link link-hover">
           {t("string.smart_fpv")}
-        </Link> */}
+        </Link>
         <Link to={Pages.product_ai_module} className="link link-hover">
           {t("string.ai_module")}
         </Link>
