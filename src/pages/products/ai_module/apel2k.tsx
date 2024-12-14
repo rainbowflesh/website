@@ -61,10 +61,10 @@ export const AIModuleApel2K = () => {
             src="/images/ai_module/apel2k/cover.png"
             className="product-detail-img-p1 rounded-lg bg-gray-100 dark:bg-base-200"
           />
-          {/* <img
+          <img
             src="/images/ai_module/apel2k/apel2k.gif"
             className="product-detail-img-p1 bg-gray-100 dark:bg-base-200 rounded-lg shadow-lg m-auto"
-          /> */}
+          />
         </div>
       </div>
     </div>

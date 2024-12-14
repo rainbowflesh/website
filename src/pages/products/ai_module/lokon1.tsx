@@ -117,7 +117,7 @@ export const AIModuleLokon1 = () => {
             src="/images/ai_module/lokon1/smart_cam_sys.png"
             className="product-detail-img-p1 bg-gray-100 dark:bg-base-200 rounded-lg shadow-lg"
           />
-          {/* <VideoPlayerModal /> */}
+          <VideoPlayerModal />
         </div>
       </div>
     </div>

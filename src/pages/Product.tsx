@@ -86,13 +86,13 @@ const AIModuleIndex = () => {
           name="product.ai_module.apel2k.name"
           description="string.navigation_pod"
         />
-        {/* <ProductCard
+        <ProductCard
           img1="/images/ai_module/aim100/cover.png"
           img2={undefined}
           url={ProductPages.ai_module_aim100.route}
           name="product.ai_module.aim100.name"
           description="string.navigation_pod"
-        /> */}
+        />
         <ProductCard
           img1="/images/ai_module/irca170/cover.png"
           img2={undefined}
@@ -100,20 +100,20 @@ const AIModuleIndex = () => {
           name="product.ai_module.irca170.name"
           description="string.tracking_pod"
         />
-        {/* <ProductCard
+        <ProductCard
           img1="/images/ai_module/irca58/cover.png"
           img2={undefined}
           url={ProductPages.ai_module_irca58.route}
           name="product.ai_module.irca58.name"
           description="string.tracking_pod"
-        /> */}
-        {/* <ProductCard
+        />
+        <ProductCard
           img1="/images/ai_module/lidara1/cover.png"
           img2={undefined}
           url={ProductPages.ai_module_lidara1.route}
           name="product.ai_module.lidara1.name"
           description="string.lidar"
-        /> */}
+        />
       </div>
     </div>
   );
@@ -124,6 +124,7 @@ const Index = () => {
     <div className="col-span-1 grid dot-background dark:dot-background-dark  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1 sm:gap-48 md:gap-0 lg:gap-0 flex-1">
       <div className="overflow-auto">
         <AIModuleIndex />
+        <FPVIndex />
       </div>
     </div>
   );

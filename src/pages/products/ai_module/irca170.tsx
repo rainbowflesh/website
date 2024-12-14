@@ -71,10 +71,10 @@ export const AIModuleIrca170 = () => {
             src="/images/ai_module/irca170/cover.png"
             className="product-detail-img-p1 rounded-lg bg-gray-100 dark:bg-base-200"
           />
-          {/* <img
+          <img
             src="/images/ai_module/irca170/irca170.gif"
             className="product-detail-img-p1 bg-gray-100 dark:bg-base-200 rounded-lg shadow-lg m-auto"
-          /> */}
+          />
         </div>
       </div>
     </div>
