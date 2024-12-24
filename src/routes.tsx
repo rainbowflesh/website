@@ -15,6 +15,7 @@ import { AIModuleIrca170 } from "@pages/products/ai_module/irca170";
 import { AIModuleIrca58 } from "@pages/products/ai_module/irca58";
 import { AIModuleLidara1 } from "@pages/products/ai_module/lidara1";
 import { AIModuleLokon1 } from "@pages/products/ai_module/lokon1";
+import { Fpv10Inch, Fpv7Inch } from "@pages/products/fpv";
 
 const ProductPages: ProductIndexType = ProductIndex[0];
 
@@ -48,6 +49,8 @@ const routes = [
   { path: ProductPages.ai_module_irca58.route, element: <AIModuleIrca58 /> },
   { path: ProductPages.ai_module_lidara1.route, element: <AIModuleLidara1 /> },
   { path: ProductPages.ai_module_lokon1.route, element: <AIModuleLokon1 /> },
+  { path: ProductPages.fpv_10inch.route, element: <Fpv10Inch /> },
+  { path: ProductPages.fpv_7inch.route, element: <Fpv7Inch /> },
 ];
 
 const PageRoutes = () => {
